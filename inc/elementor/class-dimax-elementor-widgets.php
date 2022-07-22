@@ -80,7 +80,7 @@ class Widgets {
 		}
 
 		$filename = str_replace( '_', '-', $filename );
-		$filename = RAZZI_ADDONS_DIR . 'inc/elementor/widgets/' . $filename . '.php';
+		$filename = DIMAX_ADDONS_DIR . 'inc/elementor/widgets/' . $filename . '.php';
 
 		if ( is_readable( $filename ) ) {
 			include( $filename );

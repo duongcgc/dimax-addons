@@ -450,19 +450,19 @@ class Settings  {
 		$screen = get_current_screen();
 
 		if ( in_array( $hook, array( 'post-new.php', 'post.php' ) ) && self::POST_TYPE == $screen->post_type ) {
-			wp_enqueue_style( 'dimax-size-guide', RAZZI_ADDONS_URL . 'modules/size-guide/assets/css/size-guide-admin.css' );
+			wp_enqueue_style( 'dimax-size-guide', DIMAX_ADDONS_URL . 'modules/size-guide/assets/css/size-guide-admin.css' );
 
-			wp_enqueue_script( 'dimax-size-guide', RAZZI_ADDONS_URL . 'modules/size-guide/assets/js/size-guide.js', array( 'jquery', 'wp-util' ),'1.0', true );
+			wp_enqueue_script( 'dimax-size-guide', DIMAX_ADDONS_URL . 'modules/size-guide/assets/js/size-guide.js', array( 'jquery', 'wp-util' ),'1.0', true );
 		}
 
 		if ( in_array( $hook, array( 'post-new.php', 'post.php' ) ) && 'product' == $screen->post_type ) {
-			wp_enqueue_style( 'dimax-product-size-guide', RAZZI_ADDONS_URL . 'modules/size-guide/assets/css/product-size-guide-admin.css' );
+			wp_enqueue_style( 'dimax-product-size-guide', DIMAX_ADDONS_URL . 'modules/size-guide/assets/css/product-size-guide-admin.css' );
 
-			wp_enqueue_script( 'dimax-product-size-guide', RAZZI_ADDONS_URL . 'modules/size-guide/assets/js/product-size-guide.js', array( 'jquery' ),'1.0', true );
+			wp_enqueue_script( 'dimax-product-size-guide', DIMAX_ADDONS_URL . 'modules/size-guide/assets/js/product-size-guide.js', array( 'jquery' ),'1.0', true );
 		}
 
 		if ( 'woocommerce_page_wc-settings' == $screen->base && ! empty( $_GET['section'] ) && 'dimax_addons_size_guide' == $_GET['section'] ) {
-			wp_enqueue_script( 'dimax-size-guide', RAZZI_ADDONS_URL . 'modules/size-guide/assets/js/size-guide-settings.js', array( 'jquery' ),'1.0', true );
+			wp_enqueue_script( 'dimax-size-guide', DIMAX_ADDONS_URL . 'modules/size-guide/assets/js/size-guide-settings.js', array( 'jquery' ),'1.0', true );
 		}
 	}
 

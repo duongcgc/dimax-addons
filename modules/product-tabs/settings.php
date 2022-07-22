@@ -581,8 +581,8 @@ class Settings  {
 		$screen = get_current_screen();
 
 		if ( in_array( $hook, array('edit.php', 'post-new.php', 'post.php' ) ) && self::POST_TYPE == $screen->post_type ) {
-			wp_enqueue_style( 'dimax-product-tabs', RAZZI_ADDONS_URL . 'modules/product-tabs/assets/product-tabs-admin.css' );
-			wp_enqueue_script( 'dimax-product-tabs', RAZZI_ADDONS_URL . 'modules/product-tabs/assets/product-tabs-admin.js', array( 'jquery', 'jquery-ui-sortable' ),'1.0', true );
+			wp_enqueue_style( 'dimax-product-tabs', DIMAX_ADDONS_URL . 'modules/product-tabs/assets/product-tabs-admin.css' );
+			wp_enqueue_script( 'dimax-product-tabs', DIMAX_ADDONS_URL . 'modules/product-tabs/assets/product-tabs-admin.js', array( 'jquery', 'jquery-ui-sortable' ),'1.0', true );
 
 		}
 

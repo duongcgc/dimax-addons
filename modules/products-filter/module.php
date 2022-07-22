@@ -59,7 +59,7 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Products_Filter\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/products-filter/settings.php',
+			'Dimax\Addons\Modules\Products_Filter\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/products-filter/settings.php',
 		] );
 	}
 

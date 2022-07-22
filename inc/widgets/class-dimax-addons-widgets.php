@@ -67,7 +67,7 @@ class Widgets {
 	 */
 	public function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Widgets\Social_Links'    => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-socials.php',
+			'Dimax\Addons\Widgets\Social_Links'    => DIMAX_ADDONS_DIR . 'inc/widgets/class-dimax-addons-socials.php',
 		] );
 	}
 

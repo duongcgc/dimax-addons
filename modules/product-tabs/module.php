@@ -61,10 +61,10 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Product_Tabs\FrontEnd'        => RAZZI_ADDONS_DIR . 'modules/product-tabs/frontend.php',
-			'Dimax\Addons\Modules\Product_Tabs\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/product-tabs/settings.php',
-			'Dimax\Addons\Modules\Product_Tabs\Product_Meta'    => RAZZI_ADDONS_DIR . 'modules/product-tabs/product-meta.php',
-			'Dimax\Addons\Modules\Product_Tabs\Post_Type'    		=> RAZZI_ADDONS_DIR . 'modules/product-tabs/post-type.php',
+			'Dimax\Addons\Modules\Product_Tabs\FrontEnd'        => DIMAX_ADDONS_DIR . 'modules/product-tabs/frontend.php',
+			'Dimax\Addons\Modules\Product_Tabs\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/product-tabs/settings.php',
+			'Dimax\Addons\Modules\Product_Tabs\Product_Meta'    => DIMAX_ADDONS_DIR . 'modules/product-tabs/product-meta.php',
+			'Dimax\Addons\Modules\Product_Tabs\Post_Type'    		=> DIMAX_ADDONS_DIR . 'modules/product-tabs/post-type.php',
 		] );
 	}
 

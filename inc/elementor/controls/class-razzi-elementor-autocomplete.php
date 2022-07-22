@@ -52,11 +52,11 @@ class Autocomplete extends \Elementor\Base_Data_Control {
 	 */
 	public function enqueue() {
 		// Styles
-		wp_register_style( 'rzautocomplete', RAZZI_ADDONS_URL . 'assets/css/admin/autocomplete.css', [], '20191807' );
+		wp_register_style( 'rzautocomplete', DIMAX_ADDONS_URL . 'assets/css/admin/autocomplete.css', [], '20191807' );
 		wp_enqueue_style( 'rzautocomplete' );
 
 		// Scripts
-		wp_register_script( 'rzautocomplete', RAZZI_ADDONS_URL . 'assets/js/admin/autocomplete.js', [
+		wp_register_script( 'rzautocomplete', DIMAX_ADDONS_URL . 'assets/js/admin/autocomplete.js', [
 			'jquery',
 			'jquery-ui-autocomplete',
 			'jquery-ui-sortable'

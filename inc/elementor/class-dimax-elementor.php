@@ -61,13 +61,13 @@ class Elementor {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Elementor\Helper'                 => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-helper.php',
-			'Dimax\Addons\Elementor\Setup'                  => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-setup.php',
-			'Dimax\Addons\Elementor\AjaxLoader'             => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-ajaxloader.php',
-			'Dimax\Addons\Elementor\Widgets'                => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-widgets.php',
-			'Dimax\Addons\Elementor\Module\Motion_Parallax' => RAZZI_ADDONS_DIR . 'inc/elementor/modules/class-dimax-elementor-motion-parallax.php',
-			'Dimax\Addons\Elementor\Controls'               => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls.php',
-			'Dimax\Addons\Elementor\Page_Settings'          => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-page-settings.php',
+			'Dimax\Addons\Elementor\Helper'                 => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-helper.php',
+			'Dimax\Addons\Elementor\Setup'                  => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-setup.php',
+			'Dimax\Addons\Elementor\AjaxLoader'             => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-ajaxloader.php',
+			'Dimax\Addons\Elementor\Widgets'                => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-widgets.php',
+			'Dimax\Addons\Elementor\Module\Motion_Parallax' => DIMAX_ADDONS_DIR . 'inc/elementor/modules/class-dimax-elementor-motion-parallax.php',
+			'Dimax\Addons\Elementor\Controls'               => DIMAX_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls.php',
+			'Dimax\Addons\Elementor\Page_Settings'          => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-page-settings.php',
 		] );
 
 	}

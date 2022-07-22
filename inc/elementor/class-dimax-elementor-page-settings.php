@@ -76,7 +76,7 @@ class Page_Settings {
 	 * @return void
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( 'reload_elementor', RAZZI_ADDONS_URL . "/assets/js/admin/reload-elementor.js", array( 'jquery' ), '20210308', true );
+		wp_enqueue_script( 'reload_elementor', DIMAX_ADDONS_URL . "/assets/js/admin/reload-elementor.js", array( 'jquery' ), '20210308', true );
 	}
 
 	/**

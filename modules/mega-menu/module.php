@@ -59,8 +59,8 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Mega_Menu\Frontend'        => RAZZI_ADDONS_DIR . 'modules/mega-menu/frontend.php',
-			'Dimax\Addons\Modules\Mega_Menu\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/mega-menu/settings.php',
+			'Dimax\Addons\Modules\Mega_Menu\Frontend'        => DIMAX_ADDONS_DIR . 'modules/mega-menu/frontend.php',
+			'Dimax\Addons\Modules\Mega_Menu\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/mega-menu/settings.php',
 		] );
 	}
 

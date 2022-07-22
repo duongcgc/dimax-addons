@@ -59,16 +59,16 @@ class Modules {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Size_Guide\Module'    			=> RAZZI_ADDONS_DIR . 'modules/size-guide/module.php',
-			'Dimax\Addons\Modules\Catalog_Mode\Module'    			=> RAZZI_ADDONS_DIR . 'modules/catalog-mode/module.php',
-			'Dimax\Addons\Modules\Product_Deals\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-deals/module.php',
-			'Dimax\Addons\Modules\Buy_Now\Module'    				=> RAZZI_ADDONS_DIR . 'modules/buy-now/module.php',
-			'Dimax\Addons\Modules\Mega_Menu\Module'    				=> RAZZI_ADDONS_DIR . 'modules/mega-menu/module.php',
-			'Dimax\Addons\Modules\Products_Filter\Module'     		=> RAZZI_ADDONS_DIR . 'modules/products-filter/module.php',
-			'Dimax\Addons\Modules\Related_Products\Module'    		=> RAZZI_ADDONS_DIR . 'modules/related-products/module.php',
-			'Dimax\Addons\Modules\Product_Tabs\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-tabs/module.php',
-			'Dimax\Addons\Modules\Ajax'    							=> RAZZI_ADDONS_DIR . 'modules/ajax.php',
-			'Dimax\Addons\Modules\Shortcodes' 						=> RAZZI_ADDONS_DIR . 'modules/shortcodes.php',
+			'Dimax\Addons\Modules\Size_Guide\Module'    			=> DIMAX_ADDONS_DIR . 'modules/size-guide/module.php',
+			'Dimax\Addons\Modules\Catalog_Mode\Module'    			=> DIMAX_ADDONS_DIR . 'modules/catalog-mode/module.php',
+			'Dimax\Addons\Modules\Product_Deals\Module'    			=> DIMAX_ADDONS_DIR . 'modules/product-deals/module.php',
+			'Dimax\Addons\Modules\Buy_Now\Module'    				=> DIMAX_ADDONS_DIR . 'modules/buy-now/module.php',
+			'Dimax\Addons\Modules\Mega_Menu\Module'    				=> DIMAX_ADDONS_DIR . 'modules/mega-menu/module.php',
+			'Dimax\Addons\Modules\Products_Filter\Module'     		=> DIMAX_ADDONS_DIR . 'modules/products-filter/module.php',
+			'Dimax\Addons\Modules\Related_Products\Module'    		=> DIMAX_ADDONS_DIR . 'modules/related-products/module.php',
+			'Dimax\Addons\Modules\Product_Tabs\Module'    			=> DIMAX_ADDONS_DIR . 'modules/product-tabs/module.php',
+			'Dimax\Addons\Modules\Ajax'    							=> DIMAX_ADDONS_DIR . 'modules/ajax.php',
+			'Dimax\Addons\Modules\Shortcodes' 						=> DIMAX_ADDONS_DIR . 'modules/shortcodes.php',
 		] );
 
 	}

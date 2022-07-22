@@ -60,13 +60,13 @@ class Edit {
 			return;
 		}
 
-		wp_register_style( 'dimax-mega-menu', RAZZI_ADDONS_URL . 'modules/mega-menu/assets/mega-menu.css', array(
+		wp_register_style( 'dimax-mega-menu', DIMAX_ADDONS_URL . 'modules/mega-menu/assets/mega-menu.css', array(
 			'media-views',
 			'wp-color-picker',
 		), '20160530' );
 		wp_enqueue_style( 'dimax-mega-menu' );
 
-		wp_register_script( 'dimax-mega-menu', RAZZI_ADDONS_URL . 'modules/mega-menu/assets/mega-menu.js', array(
+		wp_register_script( 'dimax-mega-menu', DIMAX_ADDONS_URL . 'modules/mega-menu/assets/mega-menu.js', array(
 			'jquery',
 			'jquery-ui-resizable',
 			'wp-util',
@@ -142,7 +142,7 @@ class Edit {
 		);
 
 		foreach ( $templates as $template ) {
-			$file = apply_filters( 'tamm_js_template_path', RAZZI_ADDONS_DIR . 'modules/mega-menu/tmpl/' . $template . '.php', $template );
+			$file = apply_filters( 'tamm_js_template_path', DIMAX_ADDONS_DIR . 'modules/mega-menu/tmpl/' . $template . '.php', $template );
 			?>
             <script type="text/template" id="tmpl-tamm-<?php echo esc_attr( $template ) ?>">
 				<?php

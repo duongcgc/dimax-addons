@@ -56,8 +56,8 @@ class Frontend {
 	}
 
 	public function scripts() {
-		wp_enqueue_style( 'dimax-size-guide-content', RAZZI_ADDONS_URL . 'modules/size-guide/assets/css/size-guide.css', array(), '1.0' );
-		wp_enqueue_script('dimax-size-guide-content', RAZZI_ADDONS_URL . 'modules/size-guide/assets/js/size-guide-tab.js');
+		wp_enqueue_style( 'dimax-size-guide-content', DIMAX_ADDONS_URL . 'modules/size-guide/assets/css/size-guide.css', array(), '1.0' );
+		wp_enqueue_script('dimax-size-guide-content', DIMAX_ADDONS_URL . 'modules/size-guide/assets/js/size-guide-tab.js');
 	}
 
 	/**

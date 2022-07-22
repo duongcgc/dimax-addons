@@ -75,15 +75,15 @@ class Addons {
 	 */
 	private function includes() {
 		// Auto Loader
-		require_once RAZZI_ADDONS_DIR . 'class-dimax-addons-autoloader.php';
+		require_once DIMAX_ADDONS_DIR . 'class-dimax-addons-autoloader.php';
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Helper'         => RAZZI_ADDONS_DIR . 'class-dimax-addons-helper.php',
-			'Dimax\Addons\Widgets'        => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-widgets.php',
-			'Dimax\Addons\Modules'        => RAZZI_ADDONS_DIR . 'modules/modules.php',
-			'Dimax\Addons\Elementor'      => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor.php',
-			'Dimax\Addons\Product_Brands' => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-brand.php',
-			'Dimax\Addons\Product_Authors'=> RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-author.php',
-			'Dimax\Addons\Importer'       => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-importer.php',
+			'Dimax\Addons\Helper'         => DIMAX_ADDONS_DIR . 'class-dimax-addons-helper.php',
+			'Dimax\Addons\Widgets'        => DIMAX_ADDONS_DIR . 'inc/widgets/class-dimax-addons-widgets.php',
+			'Dimax\Addons\Modules'        => DIMAX_ADDONS_DIR . 'modules/modules.php',
+			'Dimax\Addons\Elementor'      => DIMAX_ADDONS_DIR . 'inc/elementor/class-dimax-elementor.php',
+			'Dimax\Addons\Product_Brands' => DIMAX_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-brand.php',
+			'Dimax\Addons\Product_Authors'=> DIMAX_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-author.php',
+			'Dimax\Addons\Importer'       => DIMAX_ADDONS_DIR . 'inc/backend/class-dimax-addons-importer.php',
 		] );
 	}
 

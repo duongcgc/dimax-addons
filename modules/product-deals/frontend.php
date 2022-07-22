@@ -55,8 +55,8 @@ class Frontend {
 	 * @return void
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_style( 'dimax-deals', RAZZI_ADDONS_URL . 'modules/product-deals/assets/deals.css', array(), '1.0.0' );
-		wp_enqueue_script( 'coundown', RAZZI_ADDONS_URL . '/assets/js/plugins/jquery.coundown.js', array(), '1.0', true );
+		wp_enqueue_style( 'dimax-deals', DIMAX_ADDONS_URL . 'modules/product-deals/assets/deals.css', array(), '1.0.0' );
+		wp_enqueue_script( 'coundown', DIMAX_ADDONS_URL . '/assets/js/plugins/jquery.coundown.js', array(), '1.0', true );
 	}
 
 	/**
@@ -143,7 +143,7 @@ class Frontend {
 				'countdown_texts' => \Dimax\Addons\Helper::get_countdown_texts()
 			),
 			'',
-			RAZZI_ADDONS_DIR . 'modules/product-deals/templates/'
+			DIMAX_ADDONS_DIR . 'modules/product-deals/templates/'
 		);
 	}
 }

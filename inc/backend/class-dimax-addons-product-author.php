@@ -69,7 +69,7 @@ class Product_Authors {
 		add_action( 'init', array( $this, 'register_author' ), 100 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'register_admin_scripts' ) );
 
-		$this->placeholder_img_src = RAZZI_ADDONS_URL . '/img/placeholder.png';
+		$this->placeholder_img_src = DIMAX_ADDONS_URL . '/img/placeholder.png';
 		// Add form
 		add_action( 'product_author_add_form_fields', array( $this, 'add_category_fields' ) );
 		add_action( 'product_author_edit_form_fields', array( $this, 'edit_category_fields' ), 20 );
@@ -148,7 +148,7 @@ class Product_Authors {
 		$screen = get_current_screen();
 		if ( $hook == 'edit-tags.php' && $screen->taxonomy == 'product_author' || $hook == 'term.php' && $screen->taxonomy == 'product_author' ) {
 			wp_enqueue_media();
-			wp_enqueue_script( 'rz_product_author_js', RAZZI_ADDONS_URL . "/assets/js/admin/author-taxes.js", array( 'jquery' ), '20190715', true );
+			wp_enqueue_script( 'rz_product_author_js', DIMAX_ADDONS_URL . "/assets/js/admin/author-taxes.js", array( 'jquery' ), '20190715', true );
 		}
 	}
 

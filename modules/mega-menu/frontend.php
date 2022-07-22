@@ -43,8 +43,8 @@ class Frontend {
 	 * @return void
 	 */
 	private function load() {
-		require_once RAZZI_ADDONS_DIR . 'modules/mega-menu/walker.php';
-		require_once RAZZI_ADDONS_DIR . 'modules/mega-menu/mobile-walker.php';
-		require_once RAZZI_ADDONS_DIR . 'modules/mega-menu/socials-walker.php';
+		require_once DIMAX_ADDONS_DIR . 'modules/mega-menu/walker.php';
+		require_once DIMAX_ADDONS_DIR . 'modules/mega-menu/mobile-walker.php';
+		require_once DIMAX_ADDONS_DIR . 'modules/mega-menu/socials-walker.php';
 	}
 }

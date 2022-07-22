@@ -59,8 +59,8 @@ class Controls {
 	 */
 	public function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-				'Dimax\Addons\Elementor\Controls\AjaxLoader'  => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls-ajaxloader.php',
-				'Dimax\Addons\Elementor\Control\Autocomplete' => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-autocomplete.php',
+				'Dimax\Addons\Elementor\Controls\AjaxLoader'  => DIMAX_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls-ajaxloader.php',
+				'Dimax\Addons\Elementor\Control\Autocomplete' => DIMAX_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-autocomplete.php',
 			]
 		);
 

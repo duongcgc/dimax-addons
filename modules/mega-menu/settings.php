@@ -63,7 +63,7 @@ class Settings {
 	 */
 	private function load() {
 		if ( is_admin() ) {
-			require_once RAZZI_ADDONS_DIR . 'modules/mega-menu/edit.php';
+			require_once DIMAX_ADDONS_DIR . 'modules/mega-menu/edit.php';
 		}
 	}
 

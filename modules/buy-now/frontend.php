@@ -48,7 +48,7 @@ class Frontend {
 	}
 
 	public function scripts() {
-		wp_enqueue_script( 'dimax-buy-now-script', RAZZI_ADDONS_URL . 'modules/buy-now/assets/buy-now.js' );
+		wp_enqueue_script( 'dimax-buy-now-script', DIMAX_ADDONS_URL . 'modules/buy-now/assets/buy-now.js' );
 	}
 
 	/**

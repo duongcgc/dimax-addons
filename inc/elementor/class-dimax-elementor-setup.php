@@ -128,11 +128,11 @@ class Setup {
 	 * @return void
 	 */
 	public function styles() {
-		wp_register_style( 'mapbox', RAZZI_ADDONS_URL . 'assets/css/mapbox.css', array(), '1.0' );
-		wp_register_style( 'mapboxgl', RAZZI_ADDONS_URL . 'assets/css/mapbox-gl.css', array(), '1.0' );
-		wp_register_style( 'magnific',  RAZZI_ADDONS_URL . 'assets/css/magnific-popup.css', array(), '1.0' );
+		wp_register_style( 'mapbox', DIMAX_ADDONS_URL . 'assets/css/mapbox.css', array(), '1.0' );
+		wp_register_style( 'mapboxgl', DIMAX_ADDONS_URL . 'assets/css/mapbox-gl.css', array(), '1.0' );
+		wp_register_style( 'magnific',  DIMAX_ADDONS_URL . 'assets/css/magnific-popup.css', array(), '1.0' );
 
-		wp_register_style( 'image-slide-css',  RAZZI_ADDONS_URL . 'assets/css/image-slide.css', array(), '1.0' );
+		wp_register_style( 'image-slide-css',  DIMAX_ADDONS_URL . 'assets/css/image-slide.css', array(), '1.0' );
 
 	}
 
@@ -144,23 +144,23 @@ class Setup {
 	 * @return void
 	 */
 	public function scripts() {
-		wp_register_script( 'dimax-coundown', RAZZI_ADDONS_URL  . '/assets/js/plugins/jquery.coundown.js', array(), '1.0', true );
-		wp_register_script( 'mapbox', RAZZI_ADDONS_URL  . '/assets/js/plugins/mapbox.min.js', array(), '1.0', true );
-		wp_register_script( 'mapboxgl', RAZZI_ADDONS_URL  . '/assets/js/plugins/mapbox-gl.min.js', array(), '1.0', true );
-		wp_register_script( 'mapbox-sdk', RAZZI_ADDONS_URL  . '/assets/js/plugins/mapbox-sdk.min.js', array(), '1.0', true );
+		wp_register_script( 'dimax-coundown', DIMAX_ADDONS_URL  . '/assets/js/plugins/jquery.coundown.js', array(), '1.0', true );
+		wp_register_script( 'mapbox', DIMAX_ADDONS_URL  . '/assets/js/plugins/mapbox.min.js', array(), '1.0', true );
+		wp_register_script( 'mapboxgl', DIMAX_ADDONS_URL  . '/assets/js/plugins/mapbox-gl.min.js', array(), '1.0', true );
+		wp_register_script( 'mapbox-sdk', DIMAX_ADDONS_URL  . '/assets/js/plugins/mapbox-sdk.min.js', array(), '1.0', true );
 
-		wp_register_script( 'magnific', RAZZI_ADDONS_URL . '/assets/js/plugins/jquery.magnific-popup.js', array(), '1.0', true );
+		wp_register_script( 'magnific', DIMAX_ADDONS_URL . '/assets/js/plugins/jquery.magnific-popup.js', array(), '1.0', true );
 
-		wp_register_script( 'image-slide', RAZZI_ADDONS_URL . 'assets/js/plugins/image-slide.js', [], '1.0', true );
-		wp_register_script( 'dimax-masonry', RAZZI_ADDONS_URL . '/assets/js/plugins/jquery.masonryGrid.js', array( 'jquery' ), '1.0', true );
+		wp_register_script( 'image-slide', DIMAX_ADDONS_URL . 'assets/js/plugins/image-slide.js', [], '1.0', true );
+		wp_register_script( 'dimax-masonry', DIMAX_ADDONS_URL . '/assets/js/plugins/jquery.masonryGrid.js', array( 'jquery' ), '1.0', true );
 
-		wp_register_script( 'jarallax', RAZZI_ADDONS_URL . 'assets/js/plugins/jarallax.min.js', [], '1.12.8', true );
-		wp_register_script( 'dimax-elementor-parallax', RAZZI_ADDONS_URL . 'assets/js/elementor-parallax-widgets.js', [], '1.0', true );
+		wp_register_script( 'jarallax', DIMAX_ADDONS_URL . 'assets/js/plugins/jarallax.min.js', [], '1.12.8', true );
+		wp_register_script( 'dimax-elementor-parallax', DIMAX_ADDONS_URL . 'assets/js/elementor-parallax-widgets.js', [], '1.0', true );
 
-		wp_register_script( 'eventmove', RAZZI_ADDONS_URL . 'assets/js/plugins/jquery.event.move.js', [], '1.0', true );
+		wp_register_script( 'eventmove', DIMAX_ADDONS_URL . 'assets/js/plugins/jquery.event.move.js', [], '1.0', true );
 
-		wp_register_script( 'dimax-frontend', RAZZI_ADDONS_URL . '/assets/js/frontend.js', array( 'jquery', 'elementor-frontend' ), '20220310', true );
-		wp_register_script( 'dimax-product-shortcode', RAZZI_ADDONS_URL . '/assets/js/product-shortcode.js', array( 'jquery', 'elementor-frontend' ), '20220310', true );
+		wp_register_script( 'dimax-frontend', DIMAX_ADDONS_URL . '/assets/js/frontend.js', array( 'jquery', 'elementor-frontend' ), '20220310', true );
+		wp_register_script( 'dimax-product-shortcode', DIMAX_ADDONS_URL . '/assets/js/product-shortcode.js', array( 'jquery', 'elementor-frontend' ), '20220310', true );
 
 	}
 }

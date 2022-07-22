@@ -59,9 +59,9 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Related_Products\Frontend'        => RAZZI_ADDONS_DIR . 'modules/related-products/frontend.php',
-			'Dimax\Addons\Modules\Related_Products\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/settings.php',
-			'Dimax\Addons\Modules\Related_Products\Product_Options'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/product-options.php',
+			'Dimax\Addons\Modules\Related_Products\Frontend'        => DIMAX_ADDONS_DIR . 'modules/related-products/frontend.php',
+			'Dimax\Addons\Modules\Related_Products\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/related-products/settings.php',
+			'Dimax\Addons\Modules\Related_Products\Product_Options'    	=> DIMAX_ADDONS_DIR . 'modules/related-products/product-options.php',
 		] );
 	}
 

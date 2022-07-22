@@ -1845,8 +1845,8 @@ class Widget extends \WP_Widget {
 			return;
 		}
 
-		wp_enqueue_style( 'dimax-products-filter-admin', RAZZI_ADDONS_URL . 'modules/products-filter/assets/css/products-filter-admin.css', array(), '20210311' );
-		wp_enqueue_script( 'dimax-products-filter-admin', RAZZI_ADDONS_URL . 'modules/products-filter/assets/js/products-filter-admin.js', array( 'wp-util' ), '20210311', true );
+		wp_enqueue_style( 'dimax-products-filter-admin', DIMAX_ADDONS_URL . 'modules/products-filter/assets/css/products-filter-admin.css', array(), '20210311' );
+		wp_enqueue_script( 'dimax-products-filter-admin', DIMAX_ADDONS_URL . 'modules/products-filter/assets/js/products-filter-admin.js', array( 'wp-util' ), '20210311', true );
 
 		wp_localize_script(
 			'dimax-products-filter-admin', 'dimax_products_filter_params', array(
@@ -1873,7 +1873,7 @@ class Widget extends \WP_Widget {
 			wp_enqueue_style( 'select2' );
 		}
 
-		wp_enqueue_script( 'dimax-products-filter', RAZZI_ADDONS_URL . 'modules/products-filter/assets/js/products-filter.js', array(
+		wp_enqueue_script( 'dimax-products-filter', DIMAX_ADDONS_URL . 'modules/products-filter/assets/js/products-filter.js', array(
 			'jquery',
 			'wp-util',
 			'select2',

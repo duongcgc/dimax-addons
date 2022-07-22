@@ -59,8 +59,8 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Buy_Now\Frontend'        => RAZZI_ADDONS_DIR . 'modules/buy-now/frontend.php',
-			'Dimax\Addons\Modules\Buy_Now\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/buy-now/settings.php',
+			'Dimax\Addons\Modules\Buy_Now\Frontend'        => DIMAX_ADDONS_DIR . 'modules/buy-now/frontend.php',
+			'Dimax\Addons\Modules\Buy_Now\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/buy-now/settings.php',
 		] );
 	}
 

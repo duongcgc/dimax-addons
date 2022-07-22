@@ -63,7 +63,7 @@ class Settings {
 		}
 
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Products_Filter\Widget'    => RAZZI_ADDONS_DIR . 'modules/products-filter/widget.php',
+			'Dimax\Addons\Modules\Products_Filter\Widget'    => DIMAX_ADDONS_DIR . 'modules/products-filter/widget.php',
 		] );
 
 		if ( class_exists( 'WooCommerce' ) ) {

@@ -14,14 +14,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-if ( ! defined( 'RAZZI_ADDONS_DIR' ) ) {
-	define( 'RAZZI_ADDONS_DIR', plugin_dir_path( __FILE__ ) );
+if ( ! defined( 'DIMAX_ADDONS_DIR' ) ) {
+	define( 'DIMAX_ADDONS_DIR', plugin_dir_path( __FILE__ ) );
 }
 
-if ( ! defined( 'RAZZI_ADDONS_URL' ) ) {
-	define( 'RAZZI_ADDONS_URL', plugin_dir_url( __FILE__ ) );
+if ( ! defined( 'DIMAX_ADDONS_URL' ) ) {
+	define( 'DIMAX_ADDONS_URL', plugin_dir_url( __FILE__ ) );
 }
 
-require_once RAZZI_ADDONS_DIR . 'class-dimax-addons-plugin.php';
+require_once DIMAX_ADDONS_DIR . 'class-dimax-addons-plugin.php';
 
 \Dimax\Addons::instance();

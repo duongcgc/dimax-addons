@@ -59,8 +59,8 @@ class Module {
 	 */
 	private function includes() {
 		\Dimax\Addons\Auto_Loader::register( [
-			'Dimax\Addons\Modules\Size_Guide\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/settings.php',
-			'Dimax\Addons\Modules\Size_Guide\Frontend'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/frontend.php',
+			'Dimax\Addons\Modules\Size_Guide\Settings'    	=> DIMAX_ADDONS_DIR . 'modules/size-guide/settings.php',
+			'Dimax\Addons\Modules\Size_Guide\Frontend'    	=> DIMAX_ADDONS_DIR . 'modules/size-guide/frontend.php',
 		] );
 	}
 
