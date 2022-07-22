@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Class menu walker
  *
- * @package Razzi
+ * @package Dimax
  */
 class Mobile_Walker extends \Walker_Nav_Menu {
 	/**
@@ -110,7 +110,7 @@ class Mobile_Walker extends \Walker_Nav_Menu {
 		$item_icon_html = '';
 		if ( $item_icon_type === 'svg' ) {
 			$item_icon_color = $item_icon_color ? 'style="color:' . $item_icon_color . '"' : '';
-			$item_icon_html  = ! empty( $item_icon_svg ) ? '<span ' . $item_icon_color . ' class="dimax-svg-icon">' . \Razzi\Icon::sanitize_svg( $item_icon_svg ) . '</span> ' : '';
+			$item_icon_html  = ! empty( $item_icon_svg ) ? '<span ' . $item_icon_color . ' class="dimax-svg-icon">' . \Dimax\Icon::sanitize_svg( $item_icon_svg ) . '</span> ' : '';
 		} elseif ( ! empty( $item_icon_image ) ) {
 			$item_icon_html = '<img src="' . esc_attr( $item_icon_image ) . '">';
 		}

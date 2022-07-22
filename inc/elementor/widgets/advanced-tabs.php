@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -32,7 +32,7 @@ class Advanced_Tabs extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Advanced Tabs', 'dimax' );
+		return esc_html__( 'Dimax - Advanced Tabs', 'dimax' );
 	}
 
 	/**

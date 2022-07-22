@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Elementor;
+namespace Dimax\Addons\Elementor;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -107,73 +107,73 @@ class Widgets {
 	 */
 	public function init_widgets() {
 		$widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Advanced_Tabs() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Banner() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Banner_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Banner_Collection() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Banner_Video() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Brands_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Brands_Grid() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Button() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Before_After_Images() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Category_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Countdown() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Contact_Form_7() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Category_Links() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Deals_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Deals_Carousel_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Faq() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Featured_Content() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Heading() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Instagram_Grid() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Instagram_Grid_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Image_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Images_Box_Carousel_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Image_Button() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Images_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Images_Carousel_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Image_Content_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Icon_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Icons_Box_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Isolate_Slider() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Lookbook_Banner() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Lookbook_slider() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Map() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Newsletter() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Newsletter_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Promo_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Posts_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Posts_Listing() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Popular_Keywords() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Posts_Carousel_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Posts_Listing() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Pricing_Table() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Product_Banner() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Slides() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Sale_Box() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Testimonials_Carousel() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Testimonials_Carousel_2() );
-		$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Testimonials_Grid() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Advanced_Tabs() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Banner() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Banner_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Banner_Collection() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Banner_Video() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Brands_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Brands_Grid() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Button() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Before_After_Images() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Category_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Countdown() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Contact_Form_7() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Category_Links() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Deals_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Deals_Carousel_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Faq() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Featured_Content() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Heading() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Instagram_Grid() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Instagram_Grid_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Image_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Images_Box_Carousel_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Image_Button() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Images_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Images_Carousel_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Image_Content_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Icon_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Icons_Box_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Isolate_Slider() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Lookbook_Banner() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Lookbook_slider() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Map() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Newsletter() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Newsletter_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Promo_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Posts_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Posts_Listing() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Popular_Keywords() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Posts_Carousel_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Posts_Listing() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Pricing_Table() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Product_Banner() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Slides() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Sale_Box() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Testimonials_Carousel() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Testimonials_Carousel_2() );
+		$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Testimonials_Grid() );
 
 		if ( class_exists( 'WooCommerce' ) ) {
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Tab_Carousel() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Tab_Grid() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Product_Category_Tabs() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Product_Of_Category() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Carousel() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Showcase() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Slider() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Grid() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Masonry() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Deal() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Deal_2() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Razzi_Product() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Recently_Viewed_Carousel() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Recently_Viewed_Grid() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Carousel_With_Thumbnails() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_With_Banner() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Product_Category_Box() );
-			$widgets_manager->register_widget_type( new \Razzi\Addons\Elementor\Widgets\Products_Listing() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Tab_Carousel() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Tab_Grid() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Product_Category_Tabs() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Product_Of_Category() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Carousel() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Showcase() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Slider() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Grid() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Masonry() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Deal() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Deal_2() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Dimax_Product() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Recently_Viewed_Carousel() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Recently_Viewed_Grid() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Carousel_With_Thumbnails() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_With_Banner() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Product_Category_Box() );
+			$widgets_manager->register_widget_type( new \Dimax\Addons\Elementor\Widgets\Products_Listing() );
 		}
 	}
 }

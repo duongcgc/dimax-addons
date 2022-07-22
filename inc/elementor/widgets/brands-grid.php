@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
@@ -29,7 +29,7 @@ class Brands_Grid extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Brands Grid', 'dimax' );
+		return esc_html__( 'Dimax - Brands Grid', 'dimax' );
 	}
 
 	/**

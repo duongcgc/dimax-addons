@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Buy_Now;
+namespace Dimax\Addons\Modules\Buy_Now;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

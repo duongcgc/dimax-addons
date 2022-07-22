@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,17 +58,17 @@ class Modules {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Size_Guide\Module'    			=> RAZZI_ADDONS_DIR . 'modules/size-guide/module.php',
-			'Razzi\Addons\Modules\Catalog_Mode\Module'    			=> RAZZI_ADDONS_DIR . 'modules/catalog-mode/module.php',
-			'Razzi\Addons\Modules\Product_Deals\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-deals/module.php',
-			'Razzi\Addons\Modules\Buy_Now\Module'    				=> RAZZI_ADDONS_DIR . 'modules/buy-now/module.php',
-			'Razzi\Addons\Modules\Mega_Menu\Module'    				=> RAZZI_ADDONS_DIR . 'modules/mega-menu/module.php',
-			'Razzi\Addons\Modules\Products_Filter\Module'     		=> RAZZI_ADDONS_DIR . 'modules/products-filter/module.php',
-			'Razzi\Addons\Modules\Related_Products\Module'    		=> RAZZI_ADDONS_DIR . 'modules/related-products/module.php',
-			'Razzi\Addons\Modules\Product_Tabs\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-tabs/module.php',
-			'Razzi\Addons\Modules\Ajax'    							=> RAZZI_ADDONS_DIR . 'modules/ajax.php',
-			'Razzi\Addons\Modules\Shortcodes' 						=> RAZZI_ADDONS_DIR . 'modules/shortcodes.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Size_Guide\Module'    			=> RAZZI_ADDONS_DIR . 'modules/size-guide/module.php',
+			'Dimax\Addons\Modules\Catalog_Mode\Module'    			=> RAZZI_ADDONS_DIR . 'modules/catalog-mode/module.php',
+			'Dimax\Addons\Modules\Product_Deals\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-deals/module.php',
+			'Dimax\Addons\Modules\Buy_Now\Module'    				=> RAZZI_ADDONS_DIR . 'modules/buy-now/module.php',
+			'Dimax\Addons\Modules\Mega_Menu\Module'    				=> RAZZI_ADDONS_DIR . 'modules/mega-menu/module.php',
+			'Dimax\Addons\Modules\Products_Filter\Module'     		=> RAZZI_ADDONS_DIR . 'modules/products-filter/module.php',
+			'Dimax\Addons\Modules\Related_Products\Module'    		=> RAZZI_ADDONS_DIR . 'modules/related-products/module.php',
+			'Dimax\Addons\Modules\Product_Tabs\Module'    			=> RAZZI_ADDONS_DIR . 'modules/product-tabs/module.php',
+			'Dimax\Addons\Modules\Ajax'    							=> RAZZI_ADDONS_DIR . 'modules/ajax.php',
+			'Dimax\Addons\Modules\Shortcodes' 						=> RAZZI_ADDONS_DIR . 'modules/shortcodes.php',
 		] );
 
 	}
@@ -83,18 +83,18 @@ class Modules {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Ajax::instance();
+			\Dimax\Addons\Modules\Ajax::instance();
 		}
 
-		\Razzi\Addons\Modules\Buy_Now\Module::instance();
-		\Razzi\Addons\Modules\Catalog_Mode\Module::instance();
-		\Razzi\Addons\Modules\Mega_Menu\Module::instance();
-		\Razzi\Addons\Modules\Product_Deals\Module::instance();
-		\Razzi\Addons\Modules\Products_Filter\Module::instance();
-		\Razzi\Addons\Modules\Size_Guide\Module::instance();
-		\Razzi\Addons\Modules\Related_Products\Module::instance();
-		\Razzi\Addons\Modules\Product_Tabs\Module::instance();
-		\Razzi\Addons\Modules\Shortcodes::instance();
+		\Dimax\Addons\Modules\Buy_Now\Module::instance();
+		\Dimax\Addons\Modules\Catalog_Mode\Module::instance();
+		\Dimax\Addons\Modules\Mega_Menu\Module::instance();
+		\Dimax\Addons\Modules\Product_Deals\Module::instance();
+		\Dimax\Addons\Modules\Products_Filter\Module::instance();
+		\Dimax\Addons\Modules\Size_Guide\Module::instance();
+		\Dimax\Addons\Modules\Related_Products\Module::instance();
+		\Dimax\Addons\Modules\Product_Tabs\Module::instance();
+		\Dimax\Addons\Modules\Shortcodes::instance();
 	}
 
 }

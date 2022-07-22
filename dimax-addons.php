@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Razzi Addons
+ * Plugin Name: Dimax Addons
  * Plugin URI: http://drfuri.com/plugins/dimax-addons.zip
- * Description: Extra elements for Elementor. It was built for Razzi theme.
+ * Description: Extra elements for Elementor. It was built for Dimax theme.
  * Version: 1.4.0
  * Author: Drfuri
  * Author URI: http://drfuri.com/
@@ -24,4 +24,4 @@ if ( ! defined( 'RAZZI_ADDONS_URL' ) ) {
 
 require_once RAZZI_ADDONS_DIR . 'class-dimax-addons-plugin.php';
 
-\Razzi\Addons::instance();
+\Dimax\Addons::instance();

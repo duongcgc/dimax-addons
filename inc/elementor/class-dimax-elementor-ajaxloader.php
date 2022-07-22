@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor;
+namespace Dimax\Addons\Elementor;
 
 
 if ( ! defined( 'ABSPATH' ) ) {

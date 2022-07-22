@@ -1,5 +1,5 @@
 (function ($, _) {
-    var RazziProductsFilterWidget = function () {
+    var DimaxProductsFilterWidget = function () {
         var self = this;
 
         self.ajax = null;
@@ -33,14 +33,14 @@
             .on('dimax_products_filter_widget_updated', {widget: self}, self.initSliders);
     };
 
-    RazziProductsFilterWidget.prototype.init = function () {
+    DimaxProductsFilterWidget.prototype.init = function () {
         var self = this;
 
         self.initDropdowns();
         self.removeSliderInputs();
     }
 
-    RazziProductsFilterWidget.prototype.initDropdowns = function (event, form) {
+    DimaxProductsFilterWidget.prototype.initDropdowns = function (event, form) {
         if (!$.fn.select2) {
             return;
         }
@@ -63,19 +63,19 @@
         });
     }
 
-    RazziProductsFilterWidget.prototype.initSliders = function (event, form) {
+    DimaxProductsFilterWidget.prototype.initSliders = function (event, form) {
         $(document.body).trigger('init_price_filter');
 
         event.data.widget.removeSliderInputs(form);
     }
 
-    RazziProductsFilterWidget.prototype.removeSliderInputs = function (form) {
+    DimaxProductsFilterWidget.prototype.removeSliderInputs = function (form) {
         var $container = form ? $(form) : $('.products-filter-widget');
 
         $('.widget_price_filter', $container).find('input[type=hidden]').not('[name=min_price], [name=max_price]').remove();
     }
 
-    RazziProductsFilterWidget.prototype.searchTerms = function (event) {
+    DimaxProductsFilterWidget.prototype.searchTerms = function (event) {
         var $this = $(this),
             term = $this.children().val().toLowerCase(),
             $list = $this.next('.products-filter__options').find('.products-filter__option');
@@ -89,7 +89,7 @@
         }
     }
 
-    RazziProductsFilterWidget.prototype.toggleCollapse = function (event) {
+    DimaxProductsFilterWidget.prototype.toggleCollapse = function (event) {
         var $option = $(this).closest('.products-filter__option'),
             $children = $option.children('ul');
 
@@ -104,7 +104,7 @@
         });
     }
 
-    RazziProductsFilterWidget.prototype.toggleItem = function (event) {
+    DimaxProductsFilterWidget.prototype.toggleItem = function (event) {
         event.preventDefault();
 
         var $item = $(this).closest('.products-filter__option'),
@@ -161,12 +161,12 @@
         $(document.body).trigger('dimax_products_filter_change', [form]);
     }
 
-    RazziProductsFilterWidget.prototype.triggerItemChange = function () {
+    DimaxProductsFilterWidget.prototype.triggerItemChange = function () {
         var form = $(this).closest('form').get(0);
         $(document.body).trigger('dimax_products_filter_change', [form]);
     }
 
-    RazziProductsFilterWidget.prototype.addListenerToSlider = function () {
+    DimaxProductsFilterWidget.prototype.addListenerToSlider = function () {
         var $slider = $('.products-filter-widget .price_slider.ui-slider');
 
         $slider.each(function () {
@@ -182,7 +182,7 @@
         });
     }
 
-    RazziProductsFilterWidget.prototype.resetFilters = function () {
+    DimaxProductsFilterWidget.prototype.resetFilters = function () {
         var $form = $(this).closest('form');
 
         $form.get(0).reset();
@@ -196,7 +196,7 @@
         $(document.body).trigger('dimax_products_filter_reseted');
     }
 
-    RazziProductsFilterWidget.prototype.clearFilters = function () {
+    DimaxProductsFilterWidget.prototype.clearFilters = function () {
         var $filter = $(this).closest('.products-filter__filter'),
             $form = $(this).closest('form');
 
@@ -209,7 +209,7 @@
         $(document.body).trigger('dimax_products_filter_cleared');
     }
 
-    RazziProductsFilterWidget.prototype.removeFiltered = function (event) {
+    DimaxProductsFilterWidget.prototype.removeFiltered = function (event) {
         event.preventDefault();
 
         var self = event.data.widget,
@@ -254,13 +254,13 @@
         }
     }
 
-    RazziProductsFilterWidget.prototype.ajaxSearch = function (event) {
+    DimaxProductsFilterWidget.prototype.ajaxSearch = function (event) {
         event.data.widget.sendAjaxRequest(this);
 
         return false;
     }
 
-    RazziProductsFilterWidget.prototype.instantSearch = function (event, form) {
+    DimaxProductsFilterWidget.prototype.instantSearch = function (event, form) {
         var settings = $(form).data('settings');
 
         if (!settings.instant) {
@@ -270,7 +270,7 @@
         event.data.widget.sendAjaxRequest(form);
     }
 
-    RazziProductsFilterWidget.prototype.updateURL = function (event, response, url, form) {
+    DimaxProductsFilterWidget.prototype.updateURL = function (event, response, url, form) {
         var settings = $(form).data('settings');
 
         if (!settings.change_url) {
@@ -286,7 +286,7 @@
         history.pushState(null, '', url);
     }
 
-    RazziProductsFilterWidget.prototype.updateForm = function (event, response, url, form) {
+    DimaxProductsFilterWidget.prototype.updateForm = function (event, response, url, form) {
         var $widget = $(form).closest('.widget.products-filter-widget'),
             widgetId = $widget.attr('id'),
             $newWidget = $('#' + widgetId, response);
@@ -301,7 +301,7 @@
         $(document.body).trigger('dimax_products_filter_widget_updated', [form]);
     }
 
-    RazziProductsFilterWidget.prototype.sendAjaxRequest = function (form) {
+    DimaxProductsFilterWidget.prototype.sendAjaxRequest = function (form) {
         var self = this,
             $form = $(form),
             $container = $('#rz-shop-content ul.products'),
@@ -410,6 +410,6 @@
     }
 
     $(function () {
-        new RazziProductsFilterWidget();
+        new DimaxProductsFilterWidget();
     })
 })(jQuery, _);

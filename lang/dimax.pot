@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Razzi Addons\n"
+"Project-Id-Version: Dimax Addons\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-09 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -2370,7 +2370,7 @@ msgid "External URL"
 msgstr ""
 
 #. Description of the plugin
-msgid "Extra elements for Elementor. It was built for Razzi theme."
+msgid "Extra elements for Elementor. It was built for Dimax theme."
 msgstr ""
 
 #: inc/widgets/class-dimax-addons-socials.php:36
@@ -4491,239 +4491,239 @@ msgid "Rating"
 msgstr ""
 
 #: inc/elementor/class-dimax-elementor-setup.php:76
-msgid "Razzi"
+msgid "Dimax"
 msgstr ""
 
 #: inc/elementor/widgets/advanced-tabs.php:35
-msgid "Razzi - Advanced Tabs"
+msgid "Dimax - Advanced Tabs"
 msgstr ""
 
 #: inc/elementor/widgets/banner.php:35
-msgid "Razzi - Banner"
+msgid "Dimax - Banner"
 msgstr ""
 
 #: inc/elementor/widgets/banner-carousel.php:34
-msgid "Razzi - Banner Carousel"
+msgid "Dimax - Banner Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/banner-collection.php:34
-msgid "Razzi - Banner Collection"
+msgid "Dimax - Banner Collection"
 msgstr ""
 
 #: inc/elementor/widgets/banner-video.php:33
-msgid "Razzi - Banner Video"
+msgid "Dimax - Banner Video"
 msgstr ""
 
 #: inc/elementor/widgets/brands-carousel.php:34
-msgid "Razzi - Brands Carousel"
+msgid "Dimax - Brands Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/brands-grid.php:32
-msgid "Razzi - Brands Grid"
+msgid "Dimax - Brands Grid"
 msgstr ""
 
 #: inc/elementor/widgets/button.php:51
-msgid "Razzi - Button"
+msgid "Dimax - Button"
 msgstr ""
 
 #: inc/elementor/widgets/category-box.php:35
-msgid "Razzi - Category Box"
+msgid "Dimax - Category Box"
 msgstr ""
 
 #: inc/elementor/widgets/contact-form-7.php:31
-msgid "Razzi - Contact Form 7"
+msgid "Dimax - Contact Form 7"
 msgstr ""
 
 #: inc/elementor/widgets/countdown.php:33
-msgid "Razzi - Countdown"
+msgid "Dimax - Countdown"
 msgstr ""
 
 #: inc/elementor/widgets/deals-carousel.php:35
-msgid "Razzi - Deals Carousel"
+msgid "Dimax - Deals Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/faq.php:33
-msgid "Razzi - FAQs"
+msgid "Dimax - FAQs"
 msgstr ""
 
 #: inc/elementor/widgets/featured-content.php:33
-msgid "Razzi - Featured Content"
+msgid "Dimax - Featured Content"
 msgstr ""
 
 #: inc/elementor/widgets/heading.php:49
-msgid "Razzi - Heading"
+msgid "Dimax - Heading"
 msgstr ""
 
 #: inc/elementor/widgets/icon-box.php:49
-msgid "Razzi - Icon Box"
+msgid "Dimax - Icon Box"
 msgstr ""
 
 #: inc/elementor/widgets/icons-box-carousel.php:33
-msgid "Razzi - Icons Box Carousel"
+msgid "Dimax - Icons Box Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/image-box.php:36
-msgid "Razzi - Image Box"
+msgid "Dimax - Image Box"
 msgstr ""
 
 #: inc/elementor/widgets/image-button.php:34
-msgid "Razzi - Image Button"
+msgid "Dimax - Image Button"
 msgstr ""
 
 #: inc/elementor/widgets/before-after-images.php:33
-msgid "Razzi - Image Comparison"
+msgid "Dimax - Image Comparison"
 msgstr ""
 
 #: inc/elementor/widgets/image-content-box.php:34
-msgid "Razzi - Image Content Box"
+msgid "Dimax - Image Content Box"
 msgstr ""
 
 #: inc/elementor/widgets/images-carousel.php:35
-msgid "Razzi - Images Carousel"
+msgid "Dimax - Images Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/instagram-grid.php:33
-msgid "Razzi - Instagram Grid"
+msgid "Dimax - Instagram Grid"
 msgstr ""
 
 #: inc/elementor/widgets/instagram-grid-2.php:33
-msgid "Razzi - Instagram Grid 2"
+msgid "Dimax - Instagram Grid 2"
 msgstr ""
 
 #: inc/elementor/widgets/isolate-slider.php:49
-msgid "Razzi - Isolate Slider"
+msgid "Dimax - Isolate Slider"
 msgstr ""
 
 #: inc/elementor/widgets/lookbook-slider.php:34
-msgid "Razzi - Lookbook Slider"
+msgid "Dimax - Lookbook Slider"
 msgstr ""
 
 #: inc/elementor/widgets/map.php:33
-msgid "Razzi - Map"
+msgid "Dimax - Map"
 msgstr ""
 
 #: inc/elementor/widgets/newsletter.php:34
-msgid "Razzi - Newsletter"
+msgid "Dimax - Newsletter"
 msgstr ""
 
 #: inc/elementor/widgets/newsletter-2.php:33
-msgid "Razzi - Newsletter 2"
+msgid "Dimax - Newsletter 2"
 msgstr ""
 
 #: inc/elementor/widgets/popular-keywords.php:34
-msgid "Razzi - Popular Keywords"
+msgid "Dimax - Popular Keywords"
 msgstr ""
 
 #: inc/elementor/widgets/posts-carousel.php:34
-msgid "Razzi - Posts Carousel"
+msgid "Dimax - Posts Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/posts-carousel-2.php:34
-msgid "Razzi - Posts Carousel 2"
+msgid "Dimax - Posts Carousel 2"
 msgstr ""
 
 #: inc/elementor/widgets/pricing-table.php:34
-msgid "Razzi - Pricing Table"
+msgid "Dimax - Pricing Table"
 msgstr ""
 
 #: inc/elementor/widgets/product-banner.php:34
-msgid "Razzi - Product Banner"
+msgid "Dimax - Product Banner"
 msgstr ""
 
 #: inc/elementor/widgets/product-category-tabs.php:34
-msgid "Razzi - Product Category Tabs"
+msgid "Dimax - Product Category Tabs"
 msgstr ""
 
 #: inc/elementor/widgets/product-of-category.php:34
-msgid "Razzi - Product Of Category"
+msgid "Dimax - Product Of Category"
 msgstr ""
 
 #: inc/elementor/widgets/dimax-product.php:32
-msgid "Razzi - Product Summary"
+msgid "Dimax - Product Summary"
 msgstr ""
 
 #: inc/elementor/widgets/products-tab-carousel.php:33
-msgid "Razzi - Product Tabs Carousel"
+msgid "Dimax - Product Tabs Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/products-tab-grid.php:33
-msgid "Razzi - Product Tabs Grid"
+msgid "Dimax - Product Tabs Grid"
 msgstr ""
 
 #: inc/elementor/widgets/products-carousel.php:33
-msgid "Razzi - Products Carousel"
+msgid "Dimax - Products Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/products-carousel-with-thumbnails.php:32
-msgid "Razzi - Products Carousel With Thumbnails"
+msgid "Dimax - Products Carousel With Thumbnails"
 msgstr ""
 
 #: inc/elementor/widgets/products-deal.php:33
-msgid "Razzi - Products Deal"
+msgid "Dimax - Products Deal"
 msgstr ""
 
 #: modules/products-filter/widget.php:52
-msgid "Razzi - Products Filter"
+msgid "Dimax - Products Filter"
 msgstr ""
 
 #: inc/elementor/widgets/products-grid.php:32
-msgid "Razzi - Products Grid"
+msgid "Dimax - Products Grid"
 msgstr ""
 
 #: inc/elementor/widgets/products-masonry.php:34
-msgid "Razzi - Products Masonry"
+msgid "Dimax - Products Masonry"
 msgstr ""
 
 #: inc/elementor/widgets/products-recently-viewed-carousel.php:32
-msgid "Razzi - Products Recently Viewed Carousel"
+msgid "Dimax - Products Recently Viewed Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/products-recently-viewed-grid.php:32
-msgid "Razzi - Products Recently Viewed Grid"
+msgid "Dimax - Products Recently Viewed Grid"
 msgstr ""
 
 #: inc/elementor/widgets/products-showcase.php:33
-msgid "Razzi - Products Showcase"
+msgid "Dimax - Products Showcase"
 msgstr ""
 
 #: inc/elementor/widgets/products-slider.php:32
-msgid "Razzi - Products Slider"
+msgid "Dimax - Products Slider"
 msgstr ""
 
 #: inc/elementor/widgets/products-with-banner.php:34
-msgid "Razzi - Products With Banner"
+msgid "Dimax - Products With Banner"
 msgstr ""
 
 #: inc/elementor/widgets/promo-box.php:34
-msgid "Razzi - Promo Box"
+msgid "Dimax - Promo Box"
 msgstr ""
 
 #: inc/elementor/widgets/sale-box.php:34
-msgid "Razzi - Sale Box"
+msgid "Dimax - Sale Box"
 msgstr ""
 
 #: inc/elementor/widgets/slides.php:34
-msgid "Razzi - Slides"
+msgid "Dimax - Slides"
 msgstr ""
 
 #: inc/widgets/class-dimax-addons-socials.php:65
-msgid "Razzi - Social Links"
+msgid "Dimax - Social Links"
 msgstr ""
 
 #: inc/elementor/widgets/testimonials-carousel.php:32
-msgid "Razzi - Testimonials Carousel"
+msgid "Dimax - Testimonials Carousel"
 msgstr ""
 
 #: inc/elementor/widgets/testimonials-carousel-2.php:33
-msgid "Razzi - Testimonials Carousel 2"
+msgid "Dimax - Testimonials Carousel 2"
 msgstr ""
 
 #: inc/elementor/widgets/testimonials-grid.php:34
-msgid "Razzi - Testimonials Grid"
+msgid "Dimax - Testimonials Grid"
 msgstr ""
 
 #. Name of the plugin
-msgid "Razzi Addons"
+msgid "Dimax Addons"
 msgstr ""
 
 #: inc/elementor/widgets/posts-carousel-2.php:806

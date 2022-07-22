@@ -23,7 +23,7 @@
 			<p>
 				<textarea name="{{ taMegaMenu.getFieldName( 'icon_svg', data.data['menu-item-db-id'] ) }}" class="widefat rz-tamm-panel-icon_svg" rows="20" contenteditable="true">
                    <# if ( data.megaData.icon_svg ) { #>
-					<?php echo \Razzi\Icon::sanitize_svg('{{{ data.megaData.icon_svg }}}');?>
+					<?php echo \Dimax\Icon::sanitize_svg('{{{ data.megaData.icon_svg }}}');?>
                     <# } #>
                 </textarea>
 			</p>

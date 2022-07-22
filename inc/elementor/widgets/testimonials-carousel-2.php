@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -30,7 +30,7 @@ class Testimonials_Carousel_2 extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Testimonials Carousel 2', 'dimax' );
+		return esc_html__( 'Dimax - Testimonials Carousel 2', 'dimax' );
 	}
 
 	/**
@@ -1195,9 +1195,9 @@ class Testimonials_Carousel_2 extends Widget_Base {
 				$rate_content[] = '<div class="testi-rate">';
 				for ($i=0; $i < 5 ; $i++) {
 					if( $i < intval($item['rate'])){
-						$rate_content[] = \Razzi\Addons\Helper::get_svg('staring', 'rate-active', 'widget');
+						$rate_content[] = \Dimax\Addons\Helper::get_svg('staring', 'rate-active', 'widget');
 					} else {
-						$rate_content[] = \Razzi\Addons\Helper::get_svg('staring', '', 'widget');
+						$rate_content[] = \Dimax\Addons\Helper::get_svg('staring', '', 'widget');
 					}
 				}
 				$rate_content[] = '</div>';

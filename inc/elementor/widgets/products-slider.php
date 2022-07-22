@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Controls_Stack				;
@@ -30,7 +30,7 @@ class Products_Slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Products Slider', 'dimax' );
+		return esc_html__( 'Dimax - Products Slider', 'dimax' );
 	}
 
 	/**
@@ -768,8 +768,8 @@ class Products_Slider extends Widget_Base {
 						echo '</div>';
 					}
 				echo '</div>';
-				echo \Razzi\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
-				echo \Razzi\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
+				echo \Dimax\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
+				echo \Dimax\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
 				echo '<div class="swiper-pagination"></div>';
 			echo '</div>';
 		echo '</div>';

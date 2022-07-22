@@ -1,13 +1,13 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Scheme_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -32,7 +32,7 @@ class Deals_Carousel_2 extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Deals Carousel 2', 'dimax' );
+		return esc_html__( 'Dimax - Deals Carousel 2', 'dimax' );
 	}
 
 	/**
@@ -940,7 +940,7 @@ class Deals_Carousel_2 extends Widget_Base {
 			}
 
 			if ( $item['button_text'] ) {
-				$text = $item['button_text'] . \Razzi\Addons\Helper::get_svg('arrow-right');
+				$text = $item['button_text'] . \Dimax\Addons\Helper::get_svg('arrow-right');
 				$button = Helper::control_url( $link_key, $item['button_link'], $text, [ 'class' => 'dimax-button' ] );
 			}
 

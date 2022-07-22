@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Group_Control_Image_Size;
 use Elementor\Group_Control_Typography;
@@ -8,7 +8,7 @@ use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
 
 use Elementor\Controls_Stack;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -33,7 +33,7 @@ class Product_Category_Box extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Product Category Box', 'dimax' );
+		return __( 'Dimax - Product Category Box', 'dimax' );
 	}
 
 	/**
@@ -243,7 +243,7 @@ class Product_Category_Box extends Widget_Base {
 	 */
 	protected function get_categories_content( $settings ) {
 
-		$link_icon =  \Razzi\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) ;
+		$link_icon =  \Dimax\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) ;
 
 
 		$output = [];

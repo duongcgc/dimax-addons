@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Products_With_Banner extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Products With Banner', 'dimax' );
+		return __( 'Dimax - Products With Banner', 'dimax' );
 	}
 
 	/**
@@ -722,12 +722,12 @@ class Products_With_Banner extends Widget_Base {
 			$class_mobile .= ' mobile-show-featured-icons';
 		}
 
-		if( class_exists('\Razzi\Helper') && method_exists('\Razzi\Helper', 'get_option') ) {
-			if ( $mobile_pl_col = intval( \Razzi\Helper::get_option( 'mobile_landscape_product_columns' ) ) ) {
+		if( class_exists('\Dimax\Helper') && method_exists('\Dimax\Helper', 'get_option') ) {
+			if ( $mobile_pl_col = intval( \Dimax\Helper::get_option( 'mobile_landscape_product_columns' ) ) ) {
 				$class_mobile .= ' mobile-pl-col-' . $mobile_pl_col;
 			}
 
-			if ( $mobile_pp_col = intval( \Razzi\Helper::get_option( 'mobile_portrait_product_columns' ) ) ) {
+			if ( $mobile_pp_col = intval( \Dimax\Helper::get_option( 'mobile_portrait_product_columns' ) ) ) {
 				$class_mobile .= ' mobile-pp-col-' . $mobile_pp_col;
 			}
 		}
@@ -786,7 +786,7 @@ class Products_With_Banner extends Widget_Base {
 
 		if ( $settings['button_text'] ) {
 
-			$button_text = $settings['button_text'] . \Razzi\Addons\Helper::get_svg('arrow-right');
+			$button_text = $settings['button_text'] . \Dimax\Addons\Helper::get_svg('arrow-right');
 
 			if( $settings['link_type'] == 'only' && $settings['banner_link']['url'] ) {
 				$banner_html .= sprintf( '<span class="dimax-banner__button">%s</span>', Helper::control_url( 'button' ,$settings['banner_link'], $button_text, [ 'class' => 'dimax-button button-normal' ] ) );

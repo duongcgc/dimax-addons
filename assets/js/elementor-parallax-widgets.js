@@ -1,4 +1,4 @@
-class RazziMotionParallaxHandler extends elementorModules.frontend.handlers.Base {
+class DimaxMotionParallaxHandler extends elementorModules.frontend.handlers.Base {
 	getDefaultSettings() {
 		const options = {
 			addBackgroundLayerTo: '',
@@ -63,11 +63,11 @@ jQuery( window ).on( 'elementor/frontend/init', () => {
 
 	if ( typeof ElementorProFrontendConfig === 'undefined' ) {
 		elementorFrontend.hooks.addAction( 'frontend/element_ready/section', ( $element ) => {
-			elementorFrontend.elementsHandler.addHandler( RazziMotionParallaxHandler, { $element: $element } );
+			elementorFrontend.elementsHandler.addHandler( DimaxMotionParallaxHandler, { $element: $element } );
 		});
 
 		elementorFrontend.hooks.addAction( 'frontend/element_ready/column', ( $element ) => {
-			elementorFrontend.elementsHandler.addHandler( RazziMotionParallaxHandler, { $element: $element, addBackgroundLayerTo: ' > .elementor-element-populated' } );
+			elementorFrontend.elementsHandler.addHandler( DimaxMotionParallaxHandler, { $element: $element, addBackgroundLayerTo: ' > .elementor-element-populated' } );
 		});
 	}
 } );

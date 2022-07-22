@@ -1,10 +1,10 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -29,7 +29,7 @@ class Products_Grid extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Products Grid', 'dimax' );
+		return __( 'Dimax - Products Grid', 'dimax' );
 	}
 
 	/**
@@ -472,8 +472,8 @@ class Products_Grid extends Widget_Base {
 				'add_args'  => false,
 				'current'   => max( 1, $current_page ),
 				'total'     => $total_pages,
-				'prev_text' => \Razzi\Addons\Helper::get_svg( 'caret-right' ),
-				'next_text' => \Razzi\Addons\Helper::get_svg( 'caret-right' ),
+				'prev_text' => \Dimax\Addons\Helper::get_svg( 'caret-right' ),
+				'next_text' => \Dimax\Addons\Helper::get_svg( 'caret-right' ),
 				'type'      => 'list',
 			)
 		);

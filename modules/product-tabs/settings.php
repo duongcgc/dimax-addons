@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Product_Tabs;
+namespace Dimax\Addons\Modules\Product_Tabs;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

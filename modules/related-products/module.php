@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Related_Products;
+namespace Dimax\Addons\Modules\Related_Products;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,10 +58,10 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Related_Products\Frontend'        => RAZZI_ADDONS_DIR . 'modules/related-products/frontend.php',
-			'Razzi\Addons\Modules\Related_Products\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/settings.php',
-			'Razzi\Addons\Modules\Related_Products\Product_Options'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/product-options.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Related_Products\Frontend'        => RAZZI_ADDONS_DIR . 'modules/related-products/frontend.php',
+			'Dimax\Addons\Modules\Related_Products\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/settings.php',
+			'Dimax\Addons\Modules\Related_Products\Product_Options'    	=> RAZZI_ADDONS_DIR . 'modules/related-products/product-options.php',
 		] );
 	}
 
@@ -75,10 +75,10 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Related_Products\Settings::instance();
+			\Dimax\Addons\Modules\Related_Products\Settings::instance();
 
 			if ( get_option( 'rz_custom_related_products' ) == 'yes' ) {
-				\Razzi\Addons\Modules\Related_Products\Product_Options::instance();
+				\Dimax\Addons\Modules\Related_Products\Product_Options::instance();
 			}
 		}
 
@@ -99,7 +99,7 @@ class Module {
 		}
 
 		if ( get_option( 'rz_related_products', 'yes' ) == 'yes' ) {
-			\Razzi\Addons\Modules\Related_Products\Frontend::instance();
+			\Dimax\Addons\Modules\Related_Products\Frontend::instance();
 		} else {
 			remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 		}

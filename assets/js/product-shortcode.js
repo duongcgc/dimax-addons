@@ -1,4 +1,4 @@
-class RazziProductShortcodeWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductShortcodeWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -182,7 +182,7 @@ class RazziProductShortcodeWidgetHandler extends elementorModules.frontend.handl
     }
 }
 
-class RazziProductsMasonryWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsMasonryWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -263,7 +263,7 @@ class RazziProductsMasonryWidgetHandler extends elementorModules.frontend.handle
     }
 }
 
-class RazziProductsDealWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsDealWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -358,7 +358,7 @@ class RazziProductsDealWidgetHandler extends elementorModules.frontend.handlers.
     }
 }
 
-class RazziProductsDeal2WidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsDeal2WidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -447,7 +447,7 @@ class RazziProductsDeal2WidgetHandler extends elementorModules.frontend.handlers
     }
 }
 
-class RazziProductsShowcaseWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsShowcaseWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -506,7 +506,7 @@ class RazziProductsShowcaseWidgetHandler extends elementorModules.frontend.handl
     }
 }
 
-class RazziProductsCarouselWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsCarouselWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -630,7 +630,7 @@ class RazziProductsCarouselWidgetHandler extends elementorModules.frontend.handl
     }
 }
 
-class RazziProductOfCategoryWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductOfCategoryWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -745,7 +745,7 @@ class RazziProductOfCategoryWidgetHandler extends elementorModules.frontend.hand
     }
 }
 
-class RazziProductsCategorytabsWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsCategorytabsWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -892,7 +892,7 @@ class RazziProductsCategorytabsWidgetHandler extends elementorModules.frontend.h
     }
 }
 
-class RazziProductstabWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductstabWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1055,7 +1055,7 @@ class RazziProductstabWidgetHandler extends elementorModules.frontend.handlers.B
     }
 }
 
-class RazziProductstabGridWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductstabGridWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1205,7 +1205,7 @@ class RazziProductstabGridWidgetHandler extends elementorModules.frontend.handle
     }
 }
 
-class RazziDealsCarouselWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxDealsCarouselWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1269,7 +1269,7 @@ class RazziDealsCarouselWidgetHandler extends elementorModules.frontend.handlers
         self.getProductSwiperInit();
     }
 }
-class RazziDealsCarousel2WidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxDealsCarousel2WidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1354,7 +1354,7 @@ class RazziDealsCarousel2WidgetHandler extends elementorModules.frontend.handler
     }
 }
 
-class RazziProductsGridWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsGridWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1474,7 +1474,7 @@ class RazziProductsGridWidgetHandler extends elementorModules.frontend.handlers.
     }
 }
 
-class RazziProductLoopHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductLoopHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1563,7 +1563,7 @@ class RazziProductLoopHandler extends elementorModules.frontend.handlers.Base {
     }
 }
 
-class RazziProductsRecentlyViewedWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsRecentlyViewedWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1729,7 +1729,7 @@ class RazziProductsRecentlyViewedWidgetHandler extends elementorModules.frontend
     }
 }
 
-class RazziProductsRecentlyViewedWidgetGridHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsRecentlyViewedWidgetGridHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1784,7 +1784,7 @@ class RazziProductsRecentlyViewedWidgetGridHandler extends elementorModules.fron
     }
 }
 
-class RazziProductsCarouselWithThumbnailsWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsCarouselWithThumbnailsWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1900,7 +1900,7 @@ class RazziProductsCarouselWithThumbnailsWidgetHandler extends elementorModules.
     }
 }
 
-class RazziProductsSliderWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsSliderWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -1948,7 +1948,7 @@ class RazziProductsSliderWidgetHandler extends elementorModules.frontend.handler
     }
 }
 
-class RazziProductsListingWidgetHandler extends elementorModules.frontend.handlers.Base {
+class DimaxProductsListingWidgetHandler extends elementorModules.frontend.handlers.Base {
     getDefaultSettings() {
         return {
             selectors: {
@@ -2066,78 +2066,78 @@ jQuery(window).on('elementor/frontend/init', () => {
 
 
     elementorFrontend.hooks.addAction('frontend/element_ready/widget', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductLoopHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductLoopHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-shortcode.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductShortcodeWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductShortcodeWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-products-masonry.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsMasonryWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsMasonryWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-products-deal.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsDealWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsDealWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-products-deal-2.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsDeal2WidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsDeal2WidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-products-showcase.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsShowcaseWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsShowcaseWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-carousel.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsCarouselWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsCarouselWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-of-category.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductOfCategoryWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductOfCategoryWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-category-tabs.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsCategorytabsWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsCategorytabsWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-tab.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductstabWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductstabWidgetHandler, {$element});
     });
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-product-tab-grid.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductstabGridWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductstabGridWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-deals-carousel.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziDealsCarouselWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxDealsCarouselWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-deals-carousel-2.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziDealsCarousel2WidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxDealsCarousel2WidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction('frontend/element_ready/dimax-products-grid.default', ($element) => {
-        elementorFrontend.elementsHandler.addHandler(RazziProductsGridWidgetHandler, {$element});
+        elementorFrontend.elementsHandler.addHandler(DimaxProductsGridWidgetHandler, {$element});
     });
 
     elementorFrontend.hooks.addAction( 'frontend/element_ready/dimax-products-recently-viewed-carousel.default', ( $element ) => {
-        elementorFrontend.elementsHandler.addHandler( RazziProductsRecentlyViewedWidgetHandler, { $element } );
+        elementorFrontend.elementsHandler.addHandler( DimaxProductsRecentlyViewedWidgetHandler, { $element } );
     } );
 
     elementorFrontend.hooks.addAction( 'frontend/element_ready/dimax-products-recently-viewed-grid.default', ( $element ) => {
-        elementorFrontend.elementsHandler.addHandler( RazziProductsRecentlyViewedWidgetGridHandler, { $element } );
+        elementorFrontend.elementsHandler.addHandler( DimaxProductsRecentlyViewedWidgetGridHandler, { $element } );
     } );
 
     elementorFrontend.hooks.addAction( 'frontend/element_ready/dimax-products-carousel-with-thumbnails.default', ( $element ) => {
-        elementorFrontend.elementsHandler.addHandler( RazziProductsCarouselWithThumbnailsWidgetHandler, { $element } );
+        elementorFrontend.elementsHandler.addHandler( DimaxProductsCarouselWithThumbnailsWidgetHandler, { $element } );
     } );
 
     elementorFrontend.hooks.addAction( 'frontend/element_ready/dimax-products-slider.default', ( $element ) => {
-        elementorFrontend.elementsHandler.addHandler( RazziProductsSliderWidgetHandler, { $element } );
+        elementorFrontend.elementsHandler.addHandler( DimaxProductsSliderWidgetHandler, { $element } );
     } );
 
     elementorFrontend.hooks.addAction( 'frontend/element_ready/dimax-products-listing.default', ( $element ) => {
-		elementorFrontend.elementsHandler.addHandler( RazziProductsListingWidgetHandler, { $element } );
+		elementorFrontend.elementsHandler.addHandler( DimaxProductsListingWidgetHandler, { $element } );
 	} );
 
 });

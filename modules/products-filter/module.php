@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Products_Filter;
+namespace Dimax\Addons\Modules\Products_Filter;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,8 +58,8 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Products_Filter\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/products-filter/settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Products_Filter\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/products-filter/settings.php',
 		] );
 	}
 
@@ -72,7 +72,7 @@ class Module {
 	 * @return void
 	 */
 	protected function add_actions() {
-		\Razzi\Addons\Modules\Products_Filter\Settings::instance();
+		\Dimax\Addons\Modules\Products_Filter\Settings::instance();
 	}
 
 }

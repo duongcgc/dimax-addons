@@ -3,7 +3,7 @@
  * Customize and add more fields for mega menu
  */
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -103,7 +103,7 @@ class Walker_Edit extends \Walker_Nav_Menu_Edit {
 			$settings->appendChild( $data );
 
 			$data           = $dom->createDocumentFragment();
-			$item_icon_html = sprintf( '<span class="hidden tamm-data-icons">%s</span>', \Razzi\Icon::sanitize_svg( $item_icon_svg ) );
+			$item_icon_html = sprintf( '<span class="hidden tamm-data-icons">%s</span>', \Dimax\Icon::sanitize_svg( $item_icon_svg ) );
 			$data->appendXML( $item_icon_html );
 			$settings->appendChild( $data );
 

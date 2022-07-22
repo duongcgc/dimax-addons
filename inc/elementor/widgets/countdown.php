@@ -1,11 +1,11 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
-use Razzi\Addons\Helper;
+use Dimax\Addons\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -30,7 +30,7 @@ class Countdown extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Countdown', 'dimax' );
+		return esc_html__( 'Dimax - Countdown', 'dimax' );
 	}
 
 	/**

@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Banner_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Banner Carousel', 'dimax' );
+		return esc_html__( 'Dimax - Banner Carousel', 'dimax' );
 	}
 
 	/**
@@ -804,7 +804,7 @@ class Banner_Carousel extends Widget_Base {
 				$key_img = 'image_' . $index;
 				$key_btn = 'btn_' . $index;
 
-				$link_icon = $item['show_default_icon'] === 'yes' ? \Razzi\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
+				$link_icon = $item['show_default_icon'] === 'yes' ? \Dimax\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
 
 				$button_text = $item['button_text'] ? sprintf( '<span class="button-text dimax-button">%s %s</span>', $item['button_text'], $link_icon ) : '';
 				$btn_full    = '';
@@ -834,8 +834,8 @@ class Banner_Carousel extends Widget_Base {
 			}
 		}
 
-		$output_arrow = \Razzi\Addons\Helper::get_svg( 'chevron-left',  'rz-swiper-button-prev rz-swiper-button' );
-		$output_arrow .= \Razzi\Addons\Helper::get_svg( 'chevron-right',  'rz-swiper-button-next rz-swiper-button' );
+		$output_arrow = \Dimax\Addons\Helper::get_svg( 'chevron-left',  'rz-swiper-button-prev rz-swiper-button' );
+		$output_arrow .= \Dimax\Addons\Helper::get_svg( 'chevron-right',  'rz-swiper-button-next rz-swiper-button' );
 
 		$this->add_render_attribute( 'wrapper', 'class', $classes );
 

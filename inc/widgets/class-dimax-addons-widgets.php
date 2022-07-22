@@ -2,12 +2,12 @@
 /**
  * Load and register widgets
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 /**
- * Razzi theme init
+ * Dimax theme init
  */
 class Widgets {
 
@@ -66,8 +66,8 @@ class Widgets {
 	 * @return void
 	 */
 	public function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Widgets\Social_Links'    => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-socials.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Widgets\Social_Links'    => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-socials.php',
 		] );
 	}
 
@@ -79,6 +79,6 @@ class Widgets {
 	 * @return void
 	 */
 	public function add_actions() {
-		register_widget( new \Razzi\Addons\Widgets\Social_Links() );
+		register_widget( new \Dimax\Addons\Widgets\Social_Links() );
 	}
 }

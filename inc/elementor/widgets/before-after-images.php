@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -30,7 +30,7 @@ class Before_After_Images extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Image Comparison', 'dimax' );
+		return esc_html__( 'Dimax - Image Comparison', 'dimax' );
 	}
 
 	/**
@@ -633,7 +633,7 @@ class Before_After_Images extends Widget_Base {
 		$overlay = sprintf('<div class="imageslide-label imageslide-before-label">'.esc_html__('Before', 'dimax').'</div>
 							<div class="imageslide-label imageslide-after-label">'.esc_html__('After', 'dimax').'</div>');
 
-		$handler = '<div class="imageslide-handle">'.\Razzi\Addons\Helper::get_svg('move-left-right', 'dimax-icon', 'widget').'</div>';
+		$handler = '<div class="imageslide-handle">'.\Dimax\Addons\Helper::get_svg('move-left-right', 'dimax-icon', 'widget').'</div>';
 
 		if ( ! empty ( $els ) ) {
 			foreach ( $els as $index => $item ) {
@@ -655,8 +655,8 @@ class Before_After_Images extends Widget_Base {
 			}
 		}
 
-		$output_arrow = \Razzi\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
-		$output_arrow .= \Razzi\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
+		$output_arrow = \Dimax\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
+		$output_arrow .= \Dimax\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
 
 		echo sprintf(
 			'<div %s>

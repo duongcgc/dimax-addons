@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Controls;
+namespace Dimax\Addons\Elementor\Controls;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

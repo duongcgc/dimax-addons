@@ -1,13 +1,13 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Icons_Manager;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -32,7 +32,7 @@ class Images_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Images Box Carousel', 'dimax' );
+		return esc_html__( 'Dimax - Images Box Carousel', 'dimax' );
 	}
 
 	/**
@@ -1406,8 +1406,8 @@ class Images_Carousel extends Widget_Base {
 			</div>
 			<?php
 				echo '<div class="dimax-images-carousel__group--arrows">';
-				echo \Razzi\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
-				echo \Razzi\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
+				echo \Dimax\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
+				echo \Dimax\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
 				echo '</div>';
 			?>
 		</div>

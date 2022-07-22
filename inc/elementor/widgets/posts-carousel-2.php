@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Posts_Carousel_2 extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Posts Carousel 2', 'dimax' );
+		return esc_html__( 'Dimax - Posts Carousel 2', 'dimax' );
 	}
 
 	/**
@@ -801,9 +801,9 @@ class Posts_Carousel_2 extends Widget_Base {
 			$html[] = '<div class="entry-summary">';
 			$html[] = '<h5 class="entry-title"><a href="' . $post_url['url'] . '">' . get_the_title( get_the_ID() ) . '</a></h5>';
 			$html[] = '<div class="entry-content">';
-			$html[] = \Razzi\Addons\Helper::get_content_limit( 15, '' );
+			$html[] = \Dimax\Addons\Helper::get_content_limit( 15, '' );
 			$html[] = '</div>';
-			$html[] = '<a class="dimax-button button-normal" href="' . esc_url( get_permalink() ) . '">' . esc_html__( 'Read more', 'dimax' ) . \Razzi\Addons\Helper::get_svg( 'arrow-right',  'dimax-icon' ) . '</a>';
+			$html[] = '<a class="dimax-button button-normal" href="' . esc_url( get_permalink() ) . '">' . esc_html__( 'Read more', 'dimax' ) . \Dimax\Addons\Helper::get_svg( 'arrow-right',  'dimax-icon' ) . '</a>';
 			$html[] = '</div>';
 			$html[] = '</article>';
 
@@ -820,8 +820,8 @@ class Posts_Carousel_2 extends Widget_Base {
                 <div class="list-posts__inner swiper-wrapper">
 					<?php echo implode( '', $html ) ?>
                 </div>
-				<?php echo \Razzi\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' ); ?>
-				<?php echo \Razzi\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' ); ?>
+				<?php echo \Dimax\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' ); ?>
+				<?php echo \Dimax\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' ); ?>
                 <div class="swiper-pagination"></div>
             </div>
         </div>

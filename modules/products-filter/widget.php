@@ -2,12 +2,12 @@
 /**
  * Theme widgets for WooCommerce.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Products_Filter;
+namespace Dimax\Addons\Modules\Products_Filter;
 
-use Razzi\Addons\Helper;
+use Dimax\Addons\Helper;
 
 use function PHPSTORM_META\map;
 
@@ -49,7 +49,7 @@ class Widget extends \WP_Widget {
 
 		parent::__construct(
 			'dimax-products-filter',
-			esc_html__( 'Razzi - Products Filter', 'dimax' ),
+			esc_html__( 'Dimax - Products Filter', 'dimax' ),
 			array(
 				'classname'                   => 'products-filter-widget woocommerce',
 				'description'                 => esc_html__( 'WooCommerce products filter.', 'dimax' ),

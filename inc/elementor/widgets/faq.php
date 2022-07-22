@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -30,7 +30,7 @@ class Faq extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - FAQs', 'dimax' );
+		return esc_html__( 'Dimax - FAQs', 'dimax' );
 	}
 
 	/**
@@ -442,7 +442,7 @@ class Faq extends Widget_Base {
 
 		foreach (  $settings["elements"]  as $index => $item ) {
 
-			$title     = $item["title"] ? '<h2 class="faq-title">' . $item["title"] . \Razzi\Addons\Helper::get_svg('chevron-bottom') . '</h2>' : '';
+			$title     = $item["title"] ? '<h2 class="faq-title">' . $item["title"] . \Dimax\Addons\Helper::get_svg('chevron-bottom') . '</h2>' : '';
 			$desc = $item['desc'] ? sprintf( '<div class="faq-desc">%s</div>', $item["desc"]  ) : '';
 
 			if( $settings['status'] == 'yes' ) {

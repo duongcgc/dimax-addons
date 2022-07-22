@@ -1,13 +1,13 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Scheme_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Background;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -32,7 +32,7 @@ class Deals_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Deals Carousel', 'dimax' );
+		return esc_html__( 'Dimax - Deals Carousel', 'dimax' );
 	}
 
 	/**
@@ -1084,7 +1084,7 @@ class Deals_Carousel extends Widget_Base {
 		$content = array();
 		$countdown_sliders = $settings['countdown_slider'];
 
-		$dataText = \Razzi\Addons\Helper::get_countdown_texts();
+		$dataText = \Dimax\Addons\Helper::get_countdown_texts();
 
 		$this->add_render_attribute( 'countdown-slider', 'data-text', wp_json_encode( $dataText ) );
 		$current  = strtotime( current_time( 'Y/m/d H:i:s' ) );
@@ -1106,7 +1106,7 @@ class Deals_Carousel extends Widget_Base {
 			}
 
 			if ( $item['button_text'] ) {
-				$text = $item['button_text'] . \Razzi\Addons\Helper::get_svg('arrow-right');
+				$text = $item['button_text'] . \Dimax\Addons\Helper::get_svg('arrow-right');
 				$button = Helper::control_url( $link_key, $item['button_link'], $text, [ 'class' => 'dimax-button' ] );
 			}
 

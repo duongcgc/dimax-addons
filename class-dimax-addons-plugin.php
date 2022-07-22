@@ -1,20 +1,20 @@
 <?php
 /**
- * Razzi Addons init
+ * Dimax Addons init
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi;
+namespace Dimax;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
 /**
- * Razzi Addons init
+ * Dimax Addons init
  *
  * @since 1.0.0
  */
@@ -61,7 +61,7 @@ class Addons {
 	 */
 	public function load_templates() {
 		$this->includes();
-		spl_autoload_register( '\Razzi\Addons\Auto_Loader::load' );
+		spl_autoload_register( '\Dimax\Addons\Auto_Loader::load' );
 
 		$this->add_actions();
 	}
@@ -76,14 +76,14 @@ class Addons {
 	private function includes() {
 		// Auto Loader
 		require_once RAZZI_ADDONS_DIR . 'class-dimax-addons-autoloader.php';
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Helper'         => RAZZI_ADDONS_DIR . 'class-dimax-addons-helper.php',
-			'Razzi\Addons\Widgets'        => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-widgets.php',
-			'Razzi\Addons\Modules'        => RAZZI_ADDONS_DIR . 'modules/modules.php',
-			'Razzi\Addons\Elementor'      => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor.php',
-			'Razzi\Addons\Product_Brands' => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-brand.php',
-			'Razzi\Addons\Product_Authors'=> RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-author.php',
-			'Razzi\Addons\Importer'       => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-importer.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Helper'         => RAZZI_ADDONS_DIR . 'class-dimax-addons-helper.php',
+			'Dimax\Addons\Widgets'        => RAZZI_ADDONS_DIR . 'inc/widgets/class-dimax-addons-widgets.php',
+			'Dimax\Addons\Modules'        => RAZZI_ADDONS_DIR . 'modules/modules.php',
+			'Dimax\Addons\Elementor'      => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor.php',
+			'Dimax\Addons\Product_Brands' => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-brand.php',
+			'Dimax\Addons\Product_Authors'=> RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-product-author.php',
+			'Dimax\Addons\Importer'       => RAZZI_ADDONS_DIR . 'inc/backend/class-dimax-addons-importer.php',
 		] );
 	}
 
@@ -119,7 +119,7 @@ class Addons {
 	}
 
 	/**
-	 * Get Razzi Addons Class instance
+	 * Get Dimax Addons Class instance
 	 *
 	 * @since 1.0.0
 	 *
@@ -129,37 +129,37 @@ class Addons {
 		switch ( $class ) {
 			case 'product_brand':
 				if ( class_exists( 'WooCommerce' ) ) {
-					return \Razzi\Addons\Product_Brands::instance();
+					return \Dimax\Addons\Product_Brands::instance();
 				}
 				break;
 			case 'product_author':
 				if ( class_exists( 'WooCommerce' ) ) {
-					return \Razzi\Addons\Product_Authors::instance();
+					return \Dimax\Addons\Product_Authors::instance();
 				}
 				break;
 			case 'importer':
 				if ( is_admin() ) {
-					return \Razzi\Addons\Importer::instance();
+					return \Dimax\Addons\Importer::instance();
 				}
 				break;
 			case 'elementor':
 				if ( did_action( 'elementor/loaded' ) ) {
-					return \Razzi\Addons\Elementor::instance();
+					return \Dimax\Addons\Elementor::instance();
 				}
 				break;
 
 			case 'modules':
-				return \Razzi\Addons\Modules::instance();
+				return \Dimax\Addons\Modules::instance();
 				break;
 
 			case 'widgets':
-				return \Razzi\Addons\Widgets::instance();
+				return \Dimax\Addons\Widgets::instance();
 				break;
 		}
 	}
 
 	/**
-	 * Get Razzi Addons Language
+	 * Get Dimax Addons Language
 	 *
 	 * @since 1.0.0
 	 *

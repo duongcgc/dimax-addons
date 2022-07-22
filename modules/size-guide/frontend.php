@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Size_Guide;
+namespace Dimax\Addons\Modules\Size_Guide;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -201,7 +201,7 @@ class Frontend {
 			'dimax_size_guide_button',
 			sprintf(
 				'<p class="product-size-guide"><a href="#" data-toggle="modal" data-target="size-guide-modal" class="size-guide-button">%s %s</a></p>',
-				\Razzi\Addons\Helper::get_svg( 'size-chart', '', 'widget' ),
+				\Dimax\Addons\Helper::get_svg( 'size-chart', '', 'widget' ),
 				$button_text
 			)
 		);
@@ -262,7 +262,7 @@ class Frontend {
 			<div class="modal-content container">
 				<div class="modal-header">
                     <h3 class="title"><?php esc_html_e( 'Size Chart', 'dimax' ) ?></h3>
-                   <span class="button-close"><?php echo \Razzi\Addons\Helper::get_svg( 'close' ) ?></span>
+                   <span class="button-close"><?php echo \Dimax\Addons\Helper::get_svg( 'close' ) ?></span>
                 </div>
 				<div class="modal-size-chart dimax-scrollbar">
 					<?php $this->size_guide_content(); ?>

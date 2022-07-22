@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -8,7 +8,7 @@ use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Group_Control_Box_Shadow;
 use Elementor\Group_Control_Border;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -33,7 +33,7 @@ class Image_Box extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Image Box', 'dimax' );
+		return esc_html__( 'Dimax - Image Box', 'dimax' );
 	}
 
 	/**
@@ -885,7 +885,7 @@ class Image_Box extends Widget_Base {
 
 		$desc = $settings['desc'] ? sprintf('<div class="box-desc">%s</div>',$settings['desc']) : '';
 
-		$button_text = $settings['button_text'] ? sprintf('%s%s',$settings['button_text'], \Razzi\Addons\Helper::get_svg( 'arrow-right' ) ) : '';
+		$button_text = $settings['button_text'] ? sprintf('%s%s',$settings['button_text'], \Dimax\Addons\Helper::get_svg( 'arrow-right' ) ) : '';
 		$button_text = ! empty( $button_text ) ? Helper::control_url( 'btn', $settings['link'], $button_text, [ 'class' => 'dimax-image-box__button dimax-button button-normal' ] ) : '';
 
 		$box_summary = $text == '' && $desc == '' && $settings['button_text'] == '' ? '' : sprintf('<div class="box-summary">%s %s%s</div>', $text,$desc,$button_text) ;

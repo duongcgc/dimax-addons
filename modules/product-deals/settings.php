@@ -1,8 +1,8 @@
 <?php
 
-namespace Razzi\Addons\Modules\Product_Deals;
+namespace Dimax\Addons\Modules\Product_Deals;
 
-use Razzi\Addons\Helper;
+use Dimax\Addons\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

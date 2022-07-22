@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules;
+namespace Dimax\Addons\Modules;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

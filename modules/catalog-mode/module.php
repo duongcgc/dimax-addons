@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Catalog_Mode;
+namespace Dimax\Addons\Modules\Catalog_Mode;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Catalog_Mode\Frontend'        => RAZZI_ADDONS_DIR . 'modules/catalog-mode/frontend.php',
-			'Razzi\Addons\Modules\Catalog_Mode\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/catalog-mode/settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Catalog_Mode\Frontend'        => RAZZI_ADDONS_DIR . 'modules/catalog-mode/frontend.php',
+			'Dimax\Addons\Modules\Catalog_Mode\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/catalog-mode/settings.php',
 		] );
 	}
 
@@ -74,11 +74,11 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Catalog_Mode\Settings::instance();
+			\Dimax\Addons\Modules\Catalog_Mode\Settings::instance();
 		}
 
 		if ( get_option( 'rz_catalog_mode' ) == 'yes' ) {
-			\Razzi\Addons\Modules\Catalog_Mode\Frontend::instance();
+			\Dimax\Addons\Modules\Catalog_Mode\Frontend::instance();
 		}
 	}
 

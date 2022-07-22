@@ -1,8 +1,8 @@
 <?php
 
-namespace Razzi\Addons\Modules\Product_Deals;
+namespace Dimax\Addons\Modules\Product_Deals;
 
-use Razzi\Addons\Helper;
+use Dimax\Addons\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -140,7 +140,7 @@ class Frontend {
 				'expire_text'     => str_replace( '/', '<br>', get_option( 'rz_product_deals_expire_text' ) ),
 				'sold_items_text' => get_option( 'rz_product_deals_sold_items_text' ),
 				'sold_text'       => get_option( 'rz_product_deals_sold_text' ),
-				'countdown_texts' => \Razzi\Addons\Helper::get_countdown_texts()
+				'countdown_texts' => \Dimax\Addons\Helper::get_countdown_texts()
 			),
 			'',
 			RAZZI_ADDONS_DIR . 'modules/product-deals/templates/'

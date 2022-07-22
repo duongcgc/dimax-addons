@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -30,7 +30,7 @@ class Icons_Box_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Icons Box Carousel', 'dimax' );
+		return esc_html__( 'Dimax - Icons Box Carousel', 'dimax' );
 	}
 
 	/**
@@ -816,8 +816,8 @@ class Icons_Box_Carousel extends Widget_Base {
 
 		}
 
-		$output_arrow = \Razzi\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
-		$output_arrow .= \Razzi\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
+		$output_arrow = \Dimax\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button');
+		$output_arrow .= \Dimax\Addons\Helper::get_svg('chevron-right', 'rz-swiper-button-next rz-swiper-button');
 
 		$this->add_render_attribute( 'wrapper', 'class', $classes );
 

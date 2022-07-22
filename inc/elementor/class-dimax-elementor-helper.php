@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Elementor;
+namespace Dimax\Addons\Elementor;
 
 /**
  * Integrate with Elementor.

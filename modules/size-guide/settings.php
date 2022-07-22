@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Size_Guide;
+namespace Dimax\Addons\Modules\Size_Guide;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

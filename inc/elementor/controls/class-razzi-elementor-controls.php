@@ -1,9 +1,9 @@
 <?php
 
-namespace Razzi\Addons\Elementor;
+namespace Dimax\Addons\Elementor;
 
-use Razzi\Addons\Elementor\Control\Autocomplete;
-use Razzi\Addons\Elementor\Controls\AjaxLoader;
+use Dimax\Addons\Elementor\Control\Autocomplete;
+use Dimax\Addons\Elementor\Controls\AjaxLoader;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Controls {
 	 * @return void
 	 */
 	public function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-				'Razzi\Addons\Elementor\Controls\AjaxLoader'  => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls-ajaxloader.php',
-				'Razzi\Addons\Elementor\Control\Autocomplete' => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-autocomplete.php',
+		\Dimax\Addons\Auto_Loader::register( [
+				'Dimax\Addons\Elementor\Controls\AjaxLoader'  => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls-ajaxloader.php',
+				'Dimax\Addons\Elementor\Control\Autocomplete' => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-autocomplete.php',
 			]
 		);
 
@@ -75,7 +75,7 @@ class Controls {
 	 */
 	public function register_controls() {
 		$controls_manager = \Elementor\Plugin::$instance->controls_manager;
-		$controls_manager->register_control( 'rzautocomplete', \Razzi\Addons\Elementor\Control\Autocomplete::instance() );
+		$controls_manager->register_control( 'rzautocomplete', \Dimax\Addons\Elementor\Control\Autocomplete::instance() );
 
 	}
 }

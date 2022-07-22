@@ -1,5 +1,5 @@
 <?php
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

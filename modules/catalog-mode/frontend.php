@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Catalog_Mode;
+namespace Dimax\Addons\Modules\Catalog_Mode;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

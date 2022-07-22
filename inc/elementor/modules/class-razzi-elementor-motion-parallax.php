@@ -1,5 +1,5 @@
 <?php
-namespace Razzi\Addons\Elementor\Module;
+namespace Dimax\Addons\Elementor\Module;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

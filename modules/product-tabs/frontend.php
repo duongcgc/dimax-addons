@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Product_Tabs;
+namespace Dimax\Addons\Modules\Product_Tabs;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -80,7 +80,7 @@ class FrontEnd {
 						$tabs[$tab->post_name]['title'] = $tab->post_title;
 						$tabs[$tab->post_name]['priority'] = $index;
 						$tabs[$tab->post_name]['tab_id'] = $tab_id;
-						$tabs[$tab->post_name]['callback'] = 'Razzi\Addons\Modules\Product_Tabs\FrontEnd::get_product_tab_content';
+						$tabs[$tab->post_name]['callback'] = 'Dimax\Addons\Modules\Product_Tabs\FrontEnd::get_product_tab_content';
 					}
 					break;
 				case 'product':
@@ -88,7 +88,7 @@ class FrontEnd {
 						$tabs[$tab->post_name]['title'] = $tab->post_title;
 						$tabs[$tab->post_name]['priority'] = $index;
 						$tabs[$tab->post_name]['tab_id'] = $tab_id;
-						$tabs[$tab->post_name]['callback'] = 'Razzi\Addons\Modules\Product_Tabs\FrontEnd::get_product_tab_content';
+						$tabs[$tab->post_name]['callback'] = 'Dimax\Addons\Modules\Product_Tabs\FrontEnd::get_product_tab_content';
 					}
 					break;
 				case 'custom':
@@ -97,7 +97,7 @@ class FrontEnd {
 						$tabs[$tab->post_name]['title'] = $tab->post_title;
 						$tabs[$tab->post_name]['priority'] = $index;
 						$tabs[$tab->post_name]['tab_id'] = $tab_id;
-						$tabs[$tab->post_name]['callback'] = 'Razzi\Addons\Modules\Product_Tabs\FrontEnd::get_product_custom_tab_content';
+						$tabs[$tab->post_name]['callback'] = 'Dimax\Addons\Modules\Product_Tabs\FrontEnd::get_product_custom_tab_content';
 					}
 					break;
 				case 'default':

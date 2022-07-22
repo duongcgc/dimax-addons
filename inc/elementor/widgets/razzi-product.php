@@ -1,10 +1,10 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
-use RazziAddons;
+use DimaxAddons;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Icon Box widget
  */
-class Razzi_Product extends Widget_Base {
+class Dimax_Product extends Widget_Base {
 	/**
 	 * Retrieve the widget name.
 	 *
@@ -29,7 +29,7 @@ class Razzi_Product extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Product Summary', 'dimax' );
+		return __( 'Dimax - Product Summary', 'dimax' );
 	}
 
 	/**
@@ -299,9 +299,9 @@ class Razzi_Product extends Widget_Base {
 				wp_enqueue_script( 'zoom' );
 			}
 
-			if ( $settings['show_size_chart'] != '' && class_exists('\Razzi\Addons\Modules\Size_Guide') ) {
-				add_action( 'dimax_woocommerce_single_product_summary', array( \Razzi\Addons\Modules\Size_Guide::instance(), 'size_guide_button' ), 25 );
-				add_action( 'dimax_woocommerce_single_product_summary', array( \Razzi\Addons\Modules\Size_Guide::instance(), 'size_guide_panel' ), 25 );
+			if ( $settings['show_size_chart'] != '' && class_exists('\Dimax\Addons\Modules\Size_Guide') ) {
+				add_action( 'dimax_woocommerce_single_product_summary', array( \Dimax\Addons\Modules\Size_Guide::instance(), 'size_guide_button' ), 25 );
+				add_action( 'dimax_woocommerce_single_product_summary', array( \Dimax\Addons\Modules\Size_Guide::instance(), 'size_guide_panel' ), 25 );
 			}
 
 			if ( $settings['show_description'] != '' ) {

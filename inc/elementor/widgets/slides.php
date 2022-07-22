@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Controls_Stack ;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Slides extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Slides', 'dimax' );
+		return esc_html__( 'Dimax - Slides', 'dimax' );
 	}
 
 	/**
@@ -2317,7 +2317,7 @@ class Slides extends Widget_Base {
 			$slide_html .=  $sale_betext == '' && $sale_text == '' ? '' : sprintf('<div class="dimax-slide__sale">%s %s</div>',$sale_betext, $sale_text);
 
 			// Button
-			$link_icon = $slide['button_style']== 'style_1' && $slide['show_default_icon'] ? \Razzi\Addons\Helper::get_svg('arrow-right', 'dimax-icon') : '';
+			$link_icon = $slide['button_style']== 'style_1' && $slide['show_default_icon'] ? \Dimax\Addons\Helper::get_svg('arrow-right', 'dimax-icon') : '';
 
 			$button_class = $slide['button_style'] == 'style_2' ? 'dimax-button--underlined' : 'dimax-button';
 
@@ -2390,8 +2390,8 @@ class Slides extends Widget_Base {
 		}
 
 		if ($slide_count > 1) {
-			$output_pagination	=  \Razzi\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
-			$output_pagination .= \Razzi\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
+			$output_pagination	=  \Dimax\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
+			$output_pagination .= \Dimax\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
 			$output_pagination .= '<div class="swiper-pagination container"></div>';
 		} else {
 			$output_pagination = '';

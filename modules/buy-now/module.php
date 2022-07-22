@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Buy_Now;
+namespace Dimax\Addons\Modules\Buy_Now;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Buy_Now\Frontend'        => RAZZI_ADDONS_DIR . 'modules/buy-now/frontend.php',
-			'Razzi\Addons\Modules\Buy_Now\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/buy-now/settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Buy_Now\Frontend'        => RAZZI_ADDONS_DIR . 'modules/buy-now/frontend.php',
+			'Dimax\Addons\Modules\Buy_Now\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/buy-now/settings.php',
 		] );
 	}
 
@@ -74,11 +74,11 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Buy_Now\Settings::instance();
+			\Dimax\Addons\Modules\Buy_Now\Settings::instance();
 		}
 
 		if ( get_option( 'rz_buy_now' ) == 'yes' ) {
-			\Razzi\Addons\Modules\Buy_Now\Frontend::instance();
+			\Dimax\Addons\Modules\Buy_Now\Frontend::instance();
 		}
 	}
 

@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Size_Guide;
+namespace Dimax\Addons\Modules\Size_Guide;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Size_Guide\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/settings.php',
-			'Razzi\Addons\Modules\Size_Guide\Frontend'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/frontend.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Size_Guide\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/settings.php',
+			'Dimax\Addons\Modules\Size_Guide\Frontend'    	=> RAZZI_ADDONS_DIR . 'modules/size-guide/frontend.php',
 		] );
 	}
 
@@ -74,11 +74,11 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			return \Razzi\Addons\Modules\Size_Guide\Settings::instance();
+			return \Dimax\Addons\Modules\Size_Guide\Settings::instance();
 		}
 
 		if ( get_option( 'dimax_size_guide' ) == 'yes' ) {
-			return \Razzi\Addons\Modules\Size_Guide\Frontend::instance();
+			return \Dimax\Addons\Modules\Size_Guide\Frontend::instance();
 		}
 	}
 

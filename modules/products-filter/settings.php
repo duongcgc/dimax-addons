@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Products_Filter;
+namespace Dimax\Addons\Modules\Products_Filter;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -62,12 +62,12 @@ class Settings {
 			return;
 		}
 
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Products_Filter\Widget'    => RAZZI_ADDONS_DIR . 'modules/products-filter/widget.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Products_Filter\Widget'    => RAZZI_ADDONS_DIR . 'modules/products-filter/widget.php',
 		] );
 
 		if ( class_exists( 'WooCommerce' ) ) {
-			register_widget( new \Razzi\Addons\Modules\Products_Filter\Widget() );
+			register_widget( new \Dimax\Addons\Modules\Products_Filter\Widget() );
 		}
 	}
 

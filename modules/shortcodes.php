@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules;
+namespace Dimax\Addons\Modules;
 
 /**
  * Class for shortcodes.

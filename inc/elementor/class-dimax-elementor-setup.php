@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Elementor;
+namespace Dimax\Addons\Elementor;
 
 /**
  * Integrate with Elementor.
@@ -67,7 +67,7 @@ class Setup {
 	}
 
 	/**
-	 * Add Razzi category
+	 * Add Dimax category
 	 *
 	 * @since 1.0.0
 	 *
@@ -77,7 +77,7 @@ class Setup {
 		$elements_manager->add_category(
 			'dimax',
 			[
-				'title' => esc_html__( 'Razzi', 'dimax' )
+				'title' => esc_html__( 'Dimax', 'dimax' )
 			]
 		);
 	}

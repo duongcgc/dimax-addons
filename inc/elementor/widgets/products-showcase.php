@@ -1,11 +1,11 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -30,7 +30,7 @@ class Products_Showcase extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Products Showcase', 'dimax' );
+		return __( 'Dimax - Products Showcase', 'dimax' );
 	}
 
 	/**
@@ -845,8 +845,8 @@ class Products_Showcase extends Widget_Base {
 
 		echo '</div>';
 
-		echo sprintf( '%s%s', \Razzi\Addons\Helper::get_svg('chevron-left', 'rz-swiper-showcase-button-prev rz-swiper-button-prev rz-swiper-button'),
-								\Razzi\Addons\Helper::get_svg('chevron-right', 'rz-swiper-showcase-button-next rz-swiper-button-next rz-swiper-button') );
+		echo sprintf( '%s%s', \Dimax\Addons\Helper::get_svg('chevron-left', 'rz-swiper-showcase-button-prev rz-swiper-button-prev rz-swiper-button'),
+								\Dimax\Addons\Helper::get_svg('chevron-right', 'rz-swiper-showcase-button-next rz-swiper-button-next rz-swiper-button') );
 
 		echo '</div>';
 	}

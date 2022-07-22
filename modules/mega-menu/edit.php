@@ -3,7 +3,7 @@
  * Customize and add more fields for mega menu
  */
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -194,7 +194,7 @@ class Edit {
 			foreach ( $meta as $key => $value ) {
 				$key = str_replace( '-', '_', $key );
 				if( $key === 'tamm_menu_item_icon_svg' ) {
-				    $value = \Razzi\Addons\Helper::sanitize_svg($value);
+				    $value = \Dimax\Addons\Helper::sanitize_svg($value);
                 }
 				update_post_meta( $id, 'tamm_menu_item_' . $key, $value );
 			}

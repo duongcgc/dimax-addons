@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 class Frontend {
 	/**

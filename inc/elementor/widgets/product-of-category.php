@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Group_Control_Typography;
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
 use Elementor\Controls_Stack;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Product_Of_Category extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Product Of Category', 'dimax' );
+		return __( 'Dimax - Product Of Category', 'dimax' );
 	}
 
 	/**
@@ -1133,8 +1133,8 @@ class Product_Of_Category extends Widget_Base {
 		$products            = Helper::get_products( $settings );
 
 		$arrows = sprintf( '%s%s',
-			\Razzi\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button'),
-			\Razzi\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button')
+			\Dimax\Addons\Helper::get_svg('chevron-left', 'rz-swiper-button-prev rz-swiper-button'),
+			\Dimax\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button')
 		);
 
 		?>

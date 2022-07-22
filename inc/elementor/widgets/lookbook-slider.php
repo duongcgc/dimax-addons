@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Controls_Stack;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Lookbook_slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Lookbook Slider', 'dimax' );
+		return esc_html__( 'Dimax - Lookbook Slider', 'dimax' );
 	}
 
 	/**
@@ -1276,7 +1276,7 @@ class Lookbook_slider extends Widget_Base {
 			}
 
 			// Button
-			$link_icon = $slide['show_default_icon'] ? \Razzi\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
+			$link_icon = $slide['show_default_icon'] ? \Dimax\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
 
 			$button_text = $slide['button_text'] ? sprintf( '<span class="button-text dimax-button">%s %s</span>', $slide['button_text'], $link_icon ) : '';
 
@@ -1348,8 +1348,8 @@ class Lookbook_slider extends Widget_Base {
 
 			}
 
-			$output_arrow = \Razzi\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' );
-			$output_arrow .= \Razzi\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' );
+			$output_arrow = \Dimax\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' );
+			$output_arrow .= \Dimax\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' );
 
 			$slide_other_html = '<div class="slick-slide-block row-flex">';
 			$slide_other_html .= '<div class="slick-slide-block__blank col-flex col-flex-md-4"></div>';

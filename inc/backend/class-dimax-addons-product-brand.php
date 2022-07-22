@@ -2,13 +2,13 @@
 /**
  * Register post types
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 /**
- * Class Razzi_Taxonomies
+ * Class Dimax_Taxonomies
  */
 class Product_Brands {
 

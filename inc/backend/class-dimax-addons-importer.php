@@ -2,10 +2,10 @@
 /**
  * Hooks for importer
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 
 /**

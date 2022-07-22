@@ -1,13 +1,13 @@
 <?php
 /**
- * Razzi Addons Helper init
+ * Dimax Addons Helper init
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -150,7 +150,7 @@ class Helper {
 			'<a href="%s" target="_blank" class="social-share-link %s">%s<span class="after-text">%s</span></a>',
 			esc_url( $url ),
 			esc_attr( $social ),
-			\Razzi\Icon::get_svg( $icon, '', 'social' ),
+			\Dimax\Icon::get_svg( $icon, '', 'social' ),
 			$text
 		);
 	}
@@ -246,8 +246,8 @@ class Helper {
 	 * @return string
 	 */
 	public static function get_svg( $svg_name, $class = '', $group = 'ui' ) {
-		if ( class_exists( '\Razzi\Icon' ) && method_exists( '\Razzi\Icon', 'get_svg' ) ) {
-			return \Razzi\Icon::get_svg( $svg_name, $class, $group );
+		if ( class_exists( '\Dimax\Icon' ) && method_exists( '\Dimax\Icon', 'get_svg' ) ) {
+			return \Dimax\Icon::get_svg( $svg_name, $class, $group );
 		}
 
 		return '';
@@ -261,8 +261,8 @@ class Helper {
 	 * @return string
 	 */
 	public static function sanitize_svg( $svg_name ) {
-		if ( class_exists( '\Razzi\Icon' ) && method_exists( '\Razzi\Icon', 'sanitize_svg' ) ) {
-			return \Razzi\Icon::sanitize_svg( $svg_name );
+		if ( class_exists( '\Dimax\Icon' ) && method_exists( '\Dimax\Icon', 'sanitize_svg' ) ) {
+			return \Dimax\Icon::sanitize_svg( $svg_name );
 		}
 
 		return '';

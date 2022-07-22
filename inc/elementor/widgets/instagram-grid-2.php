@@ -1,11 +1,11 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -30,7 +30,7 @@ class Instagram_Grid_2 extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Instagram Grid 2', 'dimax' );
+		return esc_html__( 'Dimax - Instagram Grid 2', 'dimax' );
 	}
 
 	/**
@@ -598,7 +598,7 @@ class Instagram_Grid_2 extends Widget_Base {
 		}
 
 		// Box text
-		$instagram_icon = \Razzi\Addons\Helper::get_svg('instagram', 'dimax-icon', 'social');
+		$instagram_icon = \Dimax\Addons\Helper::get_svg('instagram', 'dimax-icon', 'social');
 
 		if ( $settings['instagram_icon_type'] == 'custom' && $settings['icon'] && ! empty( $settings['icon']['value'] ) && \Elementor\Icons_Manager::is_migration_allowed() ) {
 			ob_start();

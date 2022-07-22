@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -76,7 +76,7 @@ class Settings {
 	 */
 	private function init() {
 		if ( is_admin() ) {
-			return \Razzi\Addons\Modules\Mega_Menu\Edit::instance();
+			return \Dimax\Addons\Modules\Mega_Menu\Edit::instance();
 		}
 	}
 
@@ -137,7 +137,7 @@ class Settings {
 		<fieldset class="field-menu-settings hide-if-no-js description-wide">
 			<span class="field-move-visual-label" aria-hidden="true"><?php esc_html_e( 'Mega Menu', 'dimax' ) ?></span>
 			<span class="hidden tamm-data" <?php echo $mega_data; ?> aria-hidden="true"><?php echo trim( $item_content ); ?></span>
-			<span class="hidden tamm-data-icons"><?php echo \Razzi\Icon::sanitize_svg( $item_icon_svg ); ?></span>
+			<span class="hidden tamm-data-icons"><?php echo \Dimax\Icon::sanitize_svg( $item_icon_svg ); ?></span>
 			<button type="button" class="item-config-mega opensettings button-link hide-if-no-js"><?php esc_html_e( 'Open Settings', 'dimax' ) ?></button>
 		</fieldset>
 		<?php

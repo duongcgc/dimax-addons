@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Product_Deals;
+namespace Dimax\Addons\Modules\Product_Deals;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Product_Deals\Frontend'        => RAZZI_ADDONS_DIR . 'modules/product-deals/frontend.php',
-			'Razzi\Addons\Modules\Product_Deals\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/product-deals/settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Product_Deals\Frontend'        => RAZZI_ADDONS_DIR . 'modules/product-deals/frontend.php',
+			'Dimax\Addons\Modules\Product_Deals\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/product-deals/settings.php',
 		] );
 	}
 
@@ -74,11 +74,11 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Product_Deals\Settings::instance();
+			\Dimax\Addons\Modules\Product_Deals\Settings::instance();
 		}
 
 		if ( get_option( 'rz_product_deals' ) == 'yes' ) {
-			\Razzi\Addons\Modules\Product_Deals\Frontend::instance();
+			\Dimax\Addons\Modules\Product_Deals\Frontend::instance();
 		}
 	}
 

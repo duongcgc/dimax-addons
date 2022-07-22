@@ -1,12 +1,12 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -31,7 +31,7 @@ class Banner_Collection extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Banner Collection', 'dimax' );
+		return esc_html__( 'Dimax - Banner Collection', 'dimax' );
 	}
 
 	/**
@@ -519,7 +519,7 @@ class Banner_Collection extends Widget_Base {
 		$output_img = sprintf( '<div class="dimax-banner-clt__images">%s</div>', implode( '', $images ) );
 
 		//  Content
-		$link_icon = $settings['show_default_icon'] ? \Razzi\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
+		$link_icon = $settings['show_default_icon'] ? \Dimax\Addons\Helper::get_svg( 'arrow-right', 'dimax-icon' ) : '';
 
 		$button_text = $settings['button_text'] ? sprintf( '%s %s', $settings['button_text'], $link_icon ) : '';
 		$btn_full    = '';

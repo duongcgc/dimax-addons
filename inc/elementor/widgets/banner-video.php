@@ -1,11 +1,11 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Background;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -30,7 +30,7 @@ class Banner_Video extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Banner Video', 'dimax' );
+		return esc_html__( 'Dimax - Banner Video', 'dimax' );
 	}
 
 	/**
@@ -353,7 +353,7 @@ class Banner_Video extends Widget_Base {
 			]
 		);
 
-		$icon =  \Razzi\Addons\Helper::get_svg('play', 'dimax-icon', 'widget');
+		$icon =  \Dimax\Addons\Helper::get_svg('play', 'dimax-icon', 'widget');
 
 		$marker_html =  sprintf('<span class="dimax-banner-video__marker">%s</span>', $icon) ;
 

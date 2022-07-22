@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Class menu walker
  *
- * @package Razzi
+ * @package Dimax
  */
 class Socials_Walker extends \Walker_Nav_Menu {
 	/**
@@ -123,14 +123,14 @@ class Socials_Walker extends \Walker_Nav_Menu {
 
 		if ( $item_type_icon === 'svg' ) {
 			$item_icon_color = $item_icon_color ? 'style="color:' . $item_icon_color . '"' : '';
-			$item_svg_html  = ! empty( $item_icon_svg ) ? '<span ' . $item_icon_color . ' class="dimax-svg-icon">' . \Razzi\Icon::sanitize_svg( $item_icon_svg ) . '</span> ' : '';
+			$item_svg_html  = ! empty( $item_icon_svg ) ? '<span ' . $item_icon_color . ' class="dimax-svg-icon">' . \Dimax\Icon::sanitize_svg( $item_icon_svg ) . '</span> ' : '';
 		} elseif ( ! empty( $item_icon_image ) ) {
 			$item_svg_html = '<img src="' . esc_attr( $item_icon_image ) . '">';
 		}
 
 		// Svg
 		if( empty($item_svg_html) ) {
-			$item_svg_html = \Razzi\Icon::get_svg( $url_name, '', 'social' );
+			$item_svg_html = \Dimax\Icon::get_svg( $url_name, '', 'social' );
 		}
 
 		/**

@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Mega_Menu;
+namespace Dimax\Addons\Modules\Mega_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -58,9 +58,9 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Mega_Menu\Frontend'        => RAZZI_ADDONS_DIR . 'modules/mega-menu/frontend.php',
-			'Razzi\Addons\Modules\Mega_Menu\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/mega-menu/settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Mega_Menu\Frontend'        => RAZZI_ADDONS_DIR . 'modules/mega-menu/frontend.php',
+			'Dimax\Addons\Modules\Mega_Menu\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/mega-menu/settings.php',
 		] );
 	}
 
@@ -74,11 +74,11 @@ class Module {
 	 */
 	protected function add_actions() {
 		if ( is_admin() ) {
-			\Razzi\Addons\Modules\Mega_Menu\Settings::instance();
+			\Dimax\Addons\Modules\Mega_Menu\Settings::instance();
 		}
 
 		if ( get_option( 'rz_mega_menu' ) != '1' ) {
-			\Razzi\Addons\Modules\Mega_Menu\Frontend::instance();
+			\Dimax\Addons\Modules\Mega_Menu\Frontend::instance();
 		}
 	}
 

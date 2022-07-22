@@ -1,10 +1,10 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -29,7 +29,7 @@ class Products_Carousel_With_Thumbnails extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Products Carousel With Thumbnails', 'dimax' );
+		return __( 'Dimax - Products Carousel With Thumbnails', 'dimax' );
 	}
 
 	/**
@@ -708,12 +708,12 @@ class Products_Carousel_With_Thumbnails extends Widget_Base {
 			$class_mobile .= ' mobile-show-featured-icons';
 		}
 
-		if( class_exists('\Razzi\Helper') && method_exists('\Razzi\Helper', 'get_option') ) {
-			if ( $mobile_pl_col = intval( \Razzi\Helper::get_option( 'mobile_landscape_product_columns' ) ) ) {
+		if( class_exists('\Dimax\Helper') && method_exists('\Dimax\Helper', 'get_option') ) {
+			if ( $mobile_pl_col = intval( \Dimax\Helper::get_option( 'mobile_landscape_product_columns' ) ) ) {
 				$class_mobile .= ' mobile-pl-col-' . $mobile_pl_col;
 			}
 
-			if ( $mobile_pp_col = intval( \Razzi\Helper::get_option( 'mobile_portrait_product_columns' ) ) ) {
+			if ( $mobile_pp_col = intval( \Dimax\Helper::get_option( 'mobile_portrait_product_columns' ) ) ) {
 				$class_mobile .= ' mobile-pp-col-' . $mobile_pp_col;
 			}
 		}

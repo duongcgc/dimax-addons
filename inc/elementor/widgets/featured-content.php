@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
@@ -30,7 +30,7 @@ class Featured_Content extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Razzi - Featured Content', 'dimax' );
+		return esc_html__( 'Dimax - Featured Content', 'dimax' );
 	}
 
 	/**

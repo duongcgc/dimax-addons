@@ -1,10 +1,10 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Widget_Base;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -29,7 +29,7 @@ class Products_Recently_Viewed_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Products Recently Viewed Carousel', 'dimax' );
+		return __( 'Dimax - Products Recently Viewed Carousel', 'dimax' );
 	}
 
 	/**
@@ -573,8 +573,8 @@ class Products_Recently_Viewed_Carousel extends Widget_Base {
 				?>
             </div>
             <?php if( ! empty($product_ids) ) { ?>
-                <?php echo \Razzi\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' ); ?>
-                <?php echo \Razzi\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' ); ?>
+                <?php echo \Dimax\Addons\Helper::get_svg( 'chevron-left', 'rz-swiper-button-prev rz-swiper-button' ); ?>
+                <?php echo \Dimax\Addons\Helper::get_svg( 'chevron-right', 'rz-swiper-button-next rz-swiper-button' ); ?>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-scrollbar"></div>
 			<?php } ?>

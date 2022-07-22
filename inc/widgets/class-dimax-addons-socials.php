@@ -2,12 +2,12 @@
 /**
  * Social links widget
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Widgets;
+namespace Dimax\Addons\Widgets;
 /**
- * Class Razzi_Social_Links_Widget
+ * Class Dimax_Social_Links_Widget
  */
 class Social_Links extends \WP_Widget {
 	/**
@@ -63,7 +63,7 @@ class Social_Links extends \WP_Widget {
 
 		parent::__construct(
 			'social-links-widget',
-			esc_html__( 'Razzi - Social Links', 'dimax' ),
+			esc_html__( 'Dimax - Social Links', 'dimax' ),
 			array(
 				'classname'                   => 'dimax-widget__social-links',
 				'description'                 => esc_html__( 'Display links to social media networks.', 'dimax' ),
@@ -110,7 +110,7 @@ class Social_Links extends \WP_Widget {
 				esc_url( $instance[ $social . '_url' ] ),
 				esc_attr( $social ),
 				esc_attr( $instance[ $social . '_title' ] ),
-				\Razzi\Icon::get_svg( $icon, '', 'social' )
+				\Dimax\Icon::get_svg( $icon, '', 'social' )
 			);
 		}
 

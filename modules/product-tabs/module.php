@@ -1,11 +1,11 @@
 <?php
 /**
- * Razzi Addons Modules functions and definitions.
+ * Dimax Addons Modules functions and definitions.
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons\Modules\Product_Tabs;
+namespace Dimax\Addons\Modules\Product_Tabs;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -60,11 +60,11 @@ class Module {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Modules\Product_Tabs\FrontEnd'        => RAZZI_ADDONS_DIR . 'modules/product-tabs/frontend.php',
-			'Razzi\Addons\Modules\Product_Tabs\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/product-tabs/settings.php',
-			'Razzi\Addons\Modules\Product_Tabs\Product_Meta'    => RAZZI_ADDONS_DIR . 'modules/product-tabs/product-meta.php',
-			'Razzi\Addons\Modules\Product_Tabs\Post_Type'    		=> RAZZI_ADDONS_DIR . 'modules/product-tabs/post-type.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Modules\Product_Tabs\FrontEnd'        => RAZZI_ADDONS_DIR . 'modules/product-tabs/frontend.php',
+			'Dimax\Addons\Modules\Product_Tabs\Settings'    	=> RAZZI_ADDONS_DIR . 'modules/product-tabs/settings.php',
+			'Dimax\Addons\Modules\Product_Tabs\Product_Meta'    => RAZZI_ADDONS_DIR . 'modules/product-tabs/product-meta.php',
+			'Dimax\Addons\Modules\Product_Tabs\Post_Type'    		=> RAZZI_ADDONS_DIR . 'modules/product-tabs/post-type.php',
 		] );
 	}
 
@@ -77,7 +77,7 @@ class Module {
 	 */
 	public function product_single() {
 		if ( get_option( 'dimax_product_tab' ) == 'yes' && is_singular('product') ) {
-			\Razzi\Addons\Modules\Product_Tabs\FrontEnd::instance();
+			\Dimax\Addons\Modules\Product_Tabs\FrontEnd::instance();
 		}
 	}
 
@@ -90,11 +90,11 @@ class Module {
 	 */
 	public function actions() {
 		if ( get_option( 'dimax_product_tab' ) == 'yes' ) {
-			\Razzi\Addons\Modules\Product_Tabs\Post_Type::instance();
+			\Dimax\Addons\Modules\Product_Tabs\Post_Type::instance();
 		}
 
 		if( is_admin() ) {
-			\Razzi\Addons\Modules\Product_Tabs\Settings::instance();
+			\Dimax\Addons\Modules\Product_Tabs\Settings::instance();
 		}
 	}
 
@@ -117,7 +117,7 @@ class Module {
 
 		$screen = get_current_screen();
 		if($screen->post_type == 'product') {
-			\Razzi\Addons\Modules\Product_Tabs\Product_Meta::instance();
+			\Dimax\Addons\Modules\Product_Tabs\Product_Meta::instance();
 		}
 	}
 

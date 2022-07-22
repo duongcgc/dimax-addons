@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Razzi
+ * @package Dimax
  */
 
-namespace Razzi\Addons;
+namespace Dimax\Addons;
 
 /**
  * Integrate with Elementor.
@@ -60,14 +60,14 @@ class Elementor {
 	 * @return void
 	 */
 	private function includes() {
-		\Razzi\Addons\Auto_Loader::register( [
-			'Razzi\Addons\Elementor\Helper'                 => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-helper.php',
-			'Razzi\Addons\Elementor\Setup'                  => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-setup.php',
-			'Razzi\Addons\Elementor\AjaxLoader'             => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-ajaxloader.php',
-			'Razzi\Addons\Elementor\Widgets'                => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-widgets.php',
-			'Razzi\Addons\Elementor\Module\Motion_Parallax' => RAZZI_ADDONS_DIR . 'inc/elementor/modules/class-dimax-elementor-motion-parallax.php',
-			'Razzi\Addons\Elementor\Controls'               => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls.php',
-			'Razzi\Addons\Elementor\Page_Settings'          => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-page-settings.php',
+		\Dimax\Addons\Auto_Loader::register( [
+			'Dimax\Addons\Elementor\Helper'                 => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-helper.php',
+			'Dimax\Addons\Elementor\Setup'                  => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-setup.php',
+			'Dimax\Addons\Elementor\AjaxLoader'             => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-ajaxloader.php',
+			'Dimax\Addons\Elementor\Widgets'                => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-widgets.php',
+			'Dimax\Addons\Elementor\Module\Motion_Parallax' => RAZZI_ADDONS_DIR . 'inc/elementor/modules/class-dimax-elementor-motion-parallax.php',
+			'Dimax\Addons\Elementor\Controls'               => RAZZI_ADDONS_DIR . 'inc/elementor/controls/class-dimax-elementor-controls.php',
+			'Dimax\Addons\Elementor\Page_Settings'          => RAZZI_ADDONS_DIR . 'inc/elementor/class-dimax-elementor-page-settings.php',
 		] );
 
 	}
@@ -92,7 +92,7 @@ class Elementor {
 	}
 
 	/**
-	 * Get Razzi Elementor Class instance
+	 * Get Dimax Elementor Class instance
 	 *
 	 * @since 1.0.0
 	 *
@@ -101,24 +101,24 @@ class Elementor {
 	public function get( $class ) {
 		switch ( $class ) {
 			case 'setup':
-				return \Razzi\Addons\Elementor\Setup::instance();
+				return \Dimax\Addons\Elementor\Setup::instance();
 				break;
 			case 'ajax_loader':
-				return \Razzi\Addons\Elementor\AjaxLoader::instance();
+				return \Dimax\Addons\Elementor\AjaxLoader::instance();
 				break;
 			case 'widgets':
-				return \Razzi\Addons\Elementor\Widgets::instance();
+				return \Dimax\Addons\Elementor\Widgets::instance();
 				break;
 			case 'motion_parallax':
 				if ( ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
-					return \Razzi\Addons\Elementor\Module\Motion_Parallax::instance();
+					return \Dimax\Addons\Elementor\Module\Motion_Parallax::instance();
 				}
 				break;
 			case 'controls':
-				return \Razzi\Addons\Elementor\Controls::instance();
+				return \Dimax\Addons\Elementor\Controls::instance();
 				break;
 			case 'page_settings':
-				return \Razzi\Addons\Elementor\Page_Settings::instance();
+				return \Dimax\Addons\Elementor\Page_Settings::instance();
 				break;
 		}
 	}

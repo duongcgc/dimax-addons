@@ -1,6 +1,6 @@
 <?php
 
-namespace Razzi\Addons\Elementor\Widgets;
+namespace Dimax\Addons\Elementor\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -10,7 +10,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Widget_Base;
 use Elementor\Controls_Stack ;
-use Razzi\Addons\Elementor\Helper;
+use Dimax\Addons\Elementor\Helper;
 
 /**
  * Elementor isolate slider widget.
@@ -46,7 +46,7 @@ class Isolate_Slider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Razzi - Isolate Slider', 'dimax' );
+		return __( 'Dimax - Isolate Slider', 'dimax' );
 	}
 
 	/**
@@ -1488,7 +1488,7 @@ class Isolate_Slider extends Widget_Base {
 			}
 
 			// Button
-			$button_text = $slide['button_text'] ? sprintf('<span class="button-text dimax-button">%s %s</span>', $slide['button_text'], \Razzi\Addons\Helper::get_svg('arrow-right', 'dimax-icon') ) : '';
+			$button_text = $slide['button_text'] ? sprintf('<span class="button-text dimax-button">%s %s</span>', $slide['button_text'], \Dimax\Addons\Helper::get_svg('arrow-right', 'dimax-icon') ) : '';
 
 			$key_btn = 'btn_' . $slide_count;
 
@@ -1526,8 +1526,8 @@ class Isolate_Slider extends Widget_Base {
 		}
 
 		if ($slide_count > 1) {
-			$output_pagination	=  \Razzi\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
-			$output_pagination .= \Razzi\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
+			$output_pagination	=  \Dimax\Addons\Helper::get_svg('chevron-left','rz-swiper-button-prev rz-swiper-button');
+			$output_pagination .= \Dimax\Addons\Helper::get_svg('chevron-right','rz-swiper-button-next rz-swiper-button');
 			$output_pagination .= '<div class="swiper-pagination container"></div>';
 		} else {
 			$output_pagination = '';
