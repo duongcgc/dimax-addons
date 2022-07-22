@@ -1,0 +1,32 @@
+.wp-list-table .dimax_product_tab_type-default .check-column input[type="checkbox"] {
+	display: none;
+}
+
+.wp-list-table .dimax_product_tab_type-default .row-actions > *:not('.inline') {
+	display: none;
+}
+
+.post-type-dimax_product_tab .wp-list-table .column-date {
+	display: none;
+}
+
+.wp-list-table .inline-edit-dimax_product_tab .inline-edit-status,
+.wp-list-table .inline-edit-dimax_product_tab .inline-edit-date,
+.wp-list-table .inline-edit-dimax_product_tab .inline-edit-group {
+	display: none;
+}
+
+.dimax-product-tabs-settings .form-field > label {
+	min-width: 150px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.dimax-product-tabs-settings .dimax-product-tabs--type > label {
+	padding-right: 30px;
+}
+
+.dimax-product-tabs-settings .dimax-product-tabs--categories,
+.dimax-product-tabs-settings .dimax-product-tabs--product {
+	display: none;
+}
